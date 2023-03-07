@@ -1,0 +1,83 @@
+html {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.cards {
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+
+.card {
+  width: 300px;
+  background-color: tan;
+  border-radius: 30px;
+  border: 1px solid orangered;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+img {
+  width: 100px;
+  margin: 10px;
+}
+
+.image {
+  float: left;
+}
+
+main .text {
+  background-color: rgb(233, 208, 175);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+footer .author {
+  float: right;
+}
+
+.cardRight {
+  float: right;
+}
+
+.clearRow {
+  clear: both;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+nav {
+  margin-top: 30px;
+  border: 1px solid;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(233, 208, 175);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid orangered;
+  opacity: 0.7;
+  float: left;
+}
+
+nav a:hover {
+  opacity: 1;
+}

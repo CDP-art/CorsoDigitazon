@@ -1,0 +1,9 @@
+section {
+  border: 5px solid blue;
+}
+
+section h1 {
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+}

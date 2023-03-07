@@ -1,0 +1,48 @@
+ ul:first-child li:first-child{
+  color:yellow;
+}
+
+ul:first-child li:nth-child(2){
+  color:green;
+}
+
+ul:first-child li:nth-child(3){
+  color:red;
+}
+
+ul:first-child li:nth-child(4){
+  color:blue;
+}
+
+ul:first-child li:nth-child(5){
+  color:violet;
+}
+
+ul:first-child li:last-child{
+  color:maroon;
+} 
+
+
+ul:nth-child(2) li:nth-child(odd){
+    background-color: red;
+}
+/*
+odd sta a significare i dispari o in alternativa si può scrivere
+2n-1, cioè qualsiasi figlio x2 - 1, quindi dispari
+*/
+ul:nth-child(2) li:nth-child(even){
+    background-color: blue;
+}
+
+/*
+    even è pari o si può scrivere 2n
+*/
+
+
+div :not(.plain){
+    background-color: red;
+}
+
+/*
+    IL NOT si va ad intendere il contrario di quello che si specifica
+*/

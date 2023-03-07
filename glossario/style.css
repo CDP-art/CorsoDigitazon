@@ -1,0 +1,46 @@
+html {
+  font-size: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #0099ff;
+}
+
+hr {
+  width: 300px;
+  height: 1px;
+  background-color: #0099ff;
+}
+
+header i p:first-child {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+section {
+  background-color: bisque;
+  padding: 0.3rem;
+  margin-top: 30px;
+}
+section table {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+
+}
+
+section table tr th {
+  border-bottom: 3px solid rgb(255, 197, 127);
+  padding: 0.5rem;
+}
+
+section table tr td {
+  border-bottom: 1px solid rgb(255, 197, 127);
+  padding: 0.2rem;
+}
+
+span #an{
+  color:red;
+}

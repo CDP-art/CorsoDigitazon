@@ -1,0 +1,98 @@
+* {
+  font-size: 20px;
+  box-sizing: border-box; /*INGLOBA IL PADDING, MA LE DIMENSIONI RIMANGONO INVARIATE */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  float: left;
+  width: 100px;
+  padding: 10px;
+  background-color: aqua;
+  margin-right: 10px;
+  text-align: center;
+}
+
+ul li:last-of-type {
+  background-color: gray;
+}
+
+.ulBlue {
+  background-color: blue;
+}
+
+/*PSEUDOELEMENTI*/
+
+h1::before {
+  content: "Articolo";
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+h1::after {
+  content: "!";
+}
+
+/*
+    GLI PSEUDOELEMENTI SERVONO PER AGGIUNGERE UN QUALCOSA ALL'ELEMENTO PADRE.
+    SI PUO' AGGIUNGERE, PER ESEMPIO, DEL TESTO O PRIMA O DOPO E SI PUO' AGGIUNGERE DEL CSS
+
+    DI DEFAULT E' INLINE
+*/
+
+#text::first-letter {
+  font-size: 40px;
+  color: rebeccapurple;
+}
+
+/*
+    SELECTION E' LA SELEZIONE DEL TESTO DI QUANDO VOGLIAMO SELEZIONARE UNA PARTE DI TESTO NEL BROWSER.
+    DI DEFAULT IL BG E' AZZURRINO.
+*/
+
+::selection {
+  background-color: darkseagreen;
+  color: blueviolet;
+}
+
+/*CLEAR*/
+
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+#boxContainer {
+  height: 100px;
+  background-color: grey;
+  margin-top: 100px;
+}
+
+#boxContainer .box {
+  width: 100px;
+  height: 100px;
+  padding-left: 10px;
+  float: left;
+  overflow: hidden; /*NON MOSTRARE IL CONTENUTO CHE "STRABORDA"*/
+
+  /* box-sizing: border-box; INGLOBA IL PADDING, MA LE DIMENSIONI RIMANGONO INVARIATE */
+}
+
+#boxContainer .box:nth-child(even) {
+  /*PARI*/
+
+  background-color: blue;
+}
+
+#boxContainer .box:nth-child(odd) {
+  /*DISPARI*/
+
+  background-color: red;
+}

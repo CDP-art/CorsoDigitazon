@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+body {
+  margin: 50px;
+}
+
+/* MY BLOG */
+header h1 {
+  font-family: "Yellowtail", cursive;
+  text-align: center;
+  font-size: 60px;
+}
+
+header div {
+  text-align: center;
+  background-color: aqua;
+  padding: 30px;
+  border-radius: 100px;
+}
+
+header img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Shantell Sans", cursive;
+}
+
+nav {
+  text-align: center;
+  background-color: blue;
+  border-radius: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 20px;
+  padding: 10px;
+  display: inline-block;
+  font-size: 30px;
+}
+
+nav ul li a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+section h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+section a {
+  margin: 20px;
+  background-color: rgb(219, 255, 255);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+article h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* DA DOVE VENGO */
+section ul {
+  text-align: center;
+}
+
+section li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+section li img {
+  width: 200px;
+  margin: 10px;
+}
+
+/* POSTI */
+
+section div {
+  background-color: rgb(238, 198, 198);
+  border-radius: 100px;
+  padding: 50px;
+}
+
+table {
+  width: 100%;
+}
+
+table tr {
+  text-align: center;
+}
+
+table td img {
+  width: 200px;
+}
+
+button {
+  border-radius: 50%;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}

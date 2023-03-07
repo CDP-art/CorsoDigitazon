@@ -1,0 +1,136 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#boxes {
+  border: 1px solid;
+  background-color: pink;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+
+  /*
+    Il Float sposta gli elementi dal loro flusso naturale.
+    In questo caso li sposta sulla sinistra.
+    Facendo cosi però, uscendo appunto dal loro flusso,
+    esce anche da un eventuale elemento padre
+  */
+}
+
+.boxRight {
+  float: right;
+}
+
+.clearRow {
+  clear: left;
+  /*
+  Il Clear, se ha le stesse caratteristiche del float, 
+  fa tornare il flusso normale.
+  Banalmente è come un <br> dell'html. Fa andare a capo il codice successivo.
+  Si può anche usare il both se nel caso abbiamo sia float left che right
+  */
+}
+
+/*
+    CARD
+*/
+
+#articles {
+  margin-top: 2rem;
+  /* background-color: aqua; */
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+#articles article {
+  width: 400px;
+  background-color: #516868;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #20032c;
+  float: left;
+  margin-right: 1rem;
+  cursor: pointer;
+  /* border: 1px solid #384747; */
+}
+
+#articles article:last-of-type {
+  margin-right: 0;
+}
+
+#articles article:hover {
+  background-color: #20032c;
+  color: #516868;
+}
+
+#articles .articleTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#articles .articleImage {
+  margin-bottom: 1rem;
+}
+
+#articles .articleImageLeft,
+#articles .articleImageRight {
+  float: left;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+#articles .articleImage span {
+  background-color: #516868;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  padding: 0.5rem;
+}
+
+.bgMaldive {
+  background-image: url("../images/maldive.jpg");
+}
+
+.bgCanarie {
+  background-image: url("https://www.spagna.info/wp-content/uploads/sites/39/playa-esmeralda-fuerteventura.jpg");
+}
+
+/* #articles .articleImageLeft {
+  background-color: green;
+}
+
+#articles .articleImageRight {
+  background-color: blue;
+} */
+
+#articles footer {
+  float: right;
+  background-color: aqua;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: #20032c;
+  color: #516868;
+}
+
+#articles article:hover footer {
+  color: #20032c;
+  background-color: #516868;
+}
+
+#articles article:hover span {
+  color: #20032c;
+}

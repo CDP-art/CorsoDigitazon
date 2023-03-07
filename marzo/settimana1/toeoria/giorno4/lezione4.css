@@ -1,0 +1,137 @@
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  text-align: center;
+  background-color: #1e5280;
+  color: white;
+  padding: 1rem 0;
+  /*
+  Il rem fa sempre riferimento ai px dell'html.
+  1 rem = px html
+  2 rem = px html x 2
+  */
+}
+
+#pageHeader nav {
+  background-color: #adadad;
+  padding: 1.5rem;
+}
+
+#pageHeader nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  background-color: #e46cda;
+  text-align: center;
+  width: 640px;
+  font-size: 0;
+}
+
+#pageHeader nav ul li {
+  display: inline-block;
+  width: 160px;
+  background-color: #497296;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#pageHeader nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 0.3rem;
+  display: block;
+}
+
+#pageHeader nav ul li a:hover {
+  background-color: pink;
+}
+
+#sect1 {
+  background-color: #964990;
+  padding: 1rem;
+}
+
+#sect1 div {
+  background-color: #e46cda;
+  padding: 1rem;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#sect2 {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: #d6caca;
+  padding: 0.7rem;
+  width: 350px;
+  border: 1px solid #9c9292;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+.cardTitle {
+  /* height: 40px; */
+  font-size: 1.2rem;
+  /* background-color: #030f1a; */
+}
+
+.cardImage {
+  height: 200px;
+  background-color: #030f1a;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0.6rem;
+  border: 1px solid #9c9292;
+}
+
+.imgMaldive {
+  background-image: url("maldive.jpg");
+}
+
+.imgCanarie {
+  background-image: url("https://www.spagna.info/wp-content/uploads/sites/39/playa-esmeralda-fuerteventura.jpg");
+}
+
+.cardContent {
+  margin-top: 0.6rem;
+}
+
+.cardContent div:nth-child(1) {
+  display: inline-block;
+  width: 60%;
+}
+
+.cardContent div:nth-child(2) {
+  display: inline-block;
+}
+
+.cardContent div:nth-child(2) ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cardFooter {
+  /* height: 30px;
+    background-color: #030f1a; */
+  margin-top: 0.6rem;
+  text-transform: uppercase;
+  text-align: right;
+  border-top: 1px solid #9c9292;
+  padding-top: 0.3rem;
+}

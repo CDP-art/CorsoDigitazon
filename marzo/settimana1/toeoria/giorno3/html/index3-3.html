@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box1 {
+        background-color: antiquewhite;
+      }
+
+      #box1 span {
+        background-color: aqua;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+
+        /*
+        I tag inline non sono modificabili di default, ma si possono modificare tramite CSS.
+        Display: inline rimane invariato. Display:block cambi la proprietà in block e quindi avrai dei blocchi.
+        display: inline-block prendi entrambi e avrai dei blocchi, ma allineati come la proprietà inline.
+        */
+
+        border-radius: 100%;
+        line-height: 100px; /*Interlinea che se ha gli stessi px del contenitore, è come se ti centrasse il testo*/
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Differenze CSS</h1>
+    <div id="box1">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JAVASCRIPT</span>
+    </div>
+  </body>
+</html>

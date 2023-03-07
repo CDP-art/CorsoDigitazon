@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+
+div {
+  margin-top: 40px;
+  background-color: rgb(153, 130, 175);
+}
+
+h2 {
+  background-color: rgb(159, 159, 240);
+  margin: 0;
+}
+
+table {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+caption {
+  color: white;
+  font-weight: bold;
+}
+
+th {
+  background-color: rgb(174, 162, 186);
+}
+
+tr {
+  background-color: blueviolet;
+}
+
+tr td {
+  padding: 10px;
+}

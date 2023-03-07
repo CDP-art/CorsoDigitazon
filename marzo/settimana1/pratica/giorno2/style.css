@@ -1,0 +1,26 @@
+header {
+  text-align: center;
+}
+
+header nav {
+  margin-top: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+}
+
+.selection {
+  color: brown;
+  text-decoration: underline;
+}
+
+section {
+  text-align: center;
+}
+
+footer {
+  margin-top: 50px;
+}
