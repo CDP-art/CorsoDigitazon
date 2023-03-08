@@ -1,223 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glossario</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>HTML</h1>
-      <hr>
-      <i>
-
-          L'HTML (HyperText Markup Language) è un linguaggio che rappresenta la
-          struttura di una pagina web.<br>
-          Per creare un file html, dobbiamo utilizzare l'estensione
-          <u>.html</u>.
-          <br>
-          Per scrivere la struttura di un file HTML, utiliziamo dei tag &lt;&gt;.
-          <br>
-          La maggior parte di questi tag si aprono e si chiudono
-          &lt;&gt;&lt;/&gt;.<br>
-          Ogni Tag rappresenta qualcosa che vogliamo andare a "costruire"
-          all'interno della nostra struttura HTML.
-
-          Ci sono alcuni Tag di default quando si crea un file html. Il tag
-          &lt;head&gt;&lt;head/&gt; è un tag dove all'interno vengono visualizzate
-          tutte delle informazioni utili per il programmatore, ma che non
-          vengono visualizzate a video. <br>
-          Un altro tag importate è &lt;body&gt;&lt;body/&gt;, che a differenza di
-          &lt;head&gt;&lt;head/&gt;, contiene tutte le informazioni che si vogliono
-          far visualizzare nella pagina.
-      </i>
-           <hr>
-      <i>Qui di seguito riporto alcuni dei tag più utilizzati:</i>
-    </header>
-    <section>
-      <table>
-        <caption></caption>
-        <tr>
-          <th>TAG</th>
-          <th>UTILIZZO</th>
-        </tr>
-        <tr>
-          <td>&lt;p&gt;</td>
-          <td>
-            Il &lt;p&gt; (paragrafo)viene normalmente utilizzato per i testi
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;i&gt;</td>
-          <td>
-            &lt;i&gt; (corsivo)viene utilizzato per scrivere i testi in
-            <i>corsivo</i>
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;b&gt;</td>
-          <td>
-            &lt;b&gt; (bold) si utilizza per mettere in <b>grassetto</b> la
-            parola o il testo in questione.
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;u&gt;</td>
-          <td>&lt;u&gt; (underline) si utilizza per <u>sottolineare</u></td>
-        </tr>
-        <tr>
-          <td>&lt;del&gt;</td>
-          <td>
-            &lt;del&gt; (delet) apparirà una linea sopra alla scritta, come fosse
-            <del>cancellata</del>
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;h1&gt;</td>
-          <td>
-            &lt;h1&gt; è normalmente il titolo principale del file e si ha buona
-            abitudine di averlo uno solamente in tutta la pagina. <br>
-            Ha un carattere abbastanza grande per renderlo importante. <br>
-            Esistono più estensioni e vanno da H1 ad H6. Più è grande il numero
-            e minore è la grandezza del testo
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;div&gt;</td>
-          <td>
-            Il &lt;div&gt; (divisione) è un contenitore generico ed è un elemento
-            di blocco (block level element).
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;header&gt;</td>
-          <td>
-            &lt;header&gt; (intestazione) viene normalmente utilizzata come
-            sezione primaria del file html.
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;section&gt;</td>
-          <td>
-            &lt;section&gt; (sezione) viene normalmente utilizzata per sezionare
-            in varie parti il file html.
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;main&gt;</td>
-          <td>
-            &lt;main&gt; (principale, importante) viene normalmente utilizzato
-            per una parte importante della pagina.
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;footer&gt;</td>
-          <td>
-            Il &lt;footer&gt; (pie di pagina) viene normalmente utilizzato per la
-            parte finale della pagina. Un'ultima intestazione
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;ul&gt;</td>
-          <td>
-            &lt;ul&gt; sta ad indicare Unorder list, ovvero una lista non
-            ordinata. Verrà visualizzato un elenco puntato.
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;ol&gt;</td>
-          <td>
-            &lt;ol&gt; indica una Order list, ovvero una lista ordinata. Verrà
-            visualizzato un elenco numerato.
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;li&gt;</td>
-          <td>
-            &lt;li&gt; indica List items, ovvero gli elementi della lista. I list
-            items sono sempre e solo figli della lista padre (o ul o ol)
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;table&gt;</td>
-          <td>Con &lt;table&gt; vogliamo creare una tabella</td>
-        </tr>
-        <tr>
-          <td>&lt;tr&gt;</td>
-          <td>&lt;tr&gt; sarà la riga della tabella creata (table row)</td>
-        </tr>
-        <tr>
-          <td>&lt;th&gt; &lt;td&gt;</td>
-          <td>
-            &lt;th&gt; indica i nomi della tabella (table head). Verranno
-            visualizzati in grassetto nelle prime celle in alto. <br>&lt;td&gt;
-            sono tutte le celle normali che sono figli di "tr"
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;span&gt;</td>
-          <td>
-            &lt;span&gt; viene utilizzato per separare, distinguere, prendere in
-            considerazione, quella parola o porzione di testo <br>
-            Per esempio: SP<span id="AN">AN</span>
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;article&gt;</td>
-          <td>
-            &lt;article&gt; (articolo)viene normalmente utilizzato per scrivere
-            degli articoli
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;q&gt;</td>
-          <td>&lt;q&gt; (quote)viene utilizzato per delle citazioni</td>
-        </tr>
-        <tr>
-          <td>&lt;img src="" alt=""/&gt;</td>
-          <td>
-            Img si utilizza per inserire delle immagini. <br>
-            "src" indica search e quindi dobbiamo andare a scrivere il percorso
-            del file dell'immagine interessata <br>
-            "alt" dobbiamo inserire una descrizione dell'immagine perchè è un
-            attributo che verrà utilizzato da google per i non vedenti
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;a href=""/&gt;</td>
-          <td>
-            &lt;a href=""/&gt; sta per ancor e lo utilizziamo quando dobbiamo
-            fare dei collegamenti interni alla pagina. <br>
-            Scriviamo la pagina o il punto della pagina di destinazione
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;link/&gt;</td>
-          <td>
-            Il link lo utilizziamo per i collegamenti esterni. Possiamo inserire
-            degli URL oppure dei fare collegamenti fra pagine. Per esempio lo si
-            utilizza nell'HEAD di un file html per collegarci un file esterno
-            CSS
-          </td>
-        </tr>
-      </table>
-    </section>
-
-    <header>
-      <h1>CSS</h1>
-      <hr>
-      <i>
-
-          Il CSS (Cascading Style Sheet) è la grafica, il vestito di una pagina
-          web. Se avessimo una pagina solamente html, vedremo solamente le
-          scritte nere su bianco, senza stile, ne colori, ne nulla.
-          <br>
-          Per creare una pagina CSS dobbiamo utilizzare l'estensione
-          <u>.css</u>.
-     </i>
-        <hr>
-    </header>
-  </body>
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Benvenuti nel mio glossario di programmazione</h1>
+            <h3>Qui si possono trovare i concetti base della programmazione e i linguaggi più diffusi per programmare </h3>
+            <hr>
+            <p>Diciamo che in generale, per far funzionare un sito o un'applicazione web, ci sono due grandi aree da prendere in considerazione. Il <span>FRONT END</span > è tutta la parte visibile dall'utente, cioè la parte visualizzata a video. Il <span>BACK END</span>, invece, è tutto quello che il cilente non vede. Tutta la programmazione di un'applicazione, piuttosto che la comunicazione ad un database per far salvare le cose preferite nel carrello, il riconoscimento dell'utente tramite e-mail e password, ecc.</p>
+        </header>
+          <hr>
+        <section>
+            <p>Di conseguenza esistono diversi linguaggi di programmazione in modo tale che vanno a prendere tutti i rami necessari per sviluppare un progetto e metterlo on-line.</p>
+            <ul>
+                <li>Il linguaggio HTML è il linguaggio base per scrivere il testo all'interno di una pagina. Diciamo che è la struttura portante, senza la quale non esisterebbe nulla. E' il testo nudo e crudo, nero su bianco di una pagina web.</li>
+                <li>Il CSS è tutta la parte grafica. I colori, i margini, i bordi, i centramenti, la dimensioni di immagini ecc. </li>
+                <li>JAVASCRIPT credo sia uno dei linguaggi di programmazione. Con JavaScript si può programmare sia la parte frontend che la parte backend di un progetto. Con questo linguaggio si entra nel vivo della programmazione. Si creano effetti, si aggiungono o tolgono elementi, si da tempestiche di entrata o uscita, si creano eventi ecc.</li>
+            </ul>
+            <hr>
+            <p>Dopo questa breve introduzione, vi lascio di seguito i link dove cerco di approfondire un po' questi linguaggi</p>
+            <nav>
+                <ul>
+                    <li><a href="/HTML/index.html">HTML</a></li>
+                    <li><a href="/CSS/index.html">CSS</a></li>
+                    <li><a href="/JAVASCRIPT/index.html">JAVASCRIPT</a></li>
+                </ul>
+            </nav>
+        </section>
+        <footer>
+            <p>Created by Claudio De Paolis</p>
+        </footer>
+    </div >
+</body>
 </html>

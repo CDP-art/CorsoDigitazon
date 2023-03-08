@@ -1,0 +1,71 @@
+/*PRIMO ESERCIZIO*/
+
+
+.products li{
+    list-style-type: none;
+}
+
+div .products a{
+    text-decoration: none;
+    color:black
+} 
+
+.products li a[href="/melange"]{
+    color:red;
+}
+
+.products li a[href="/the-one-ring"]{
+    color: gold;
+}
+
+
+/*SECONDO ESERCIZIO*/
+
+
+.movies-quotes span{
+    font-style: italic;   
+}
+
+.movies-quotes span span::after{
+    content: "<<";
+}
+
+.movies-quotes span::after{
+    content: ">>";
+}
+
+
+
+.movies-quotes span:first-child{
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+/*TERZO ESERCIZIO*/
+
+
+input[type="checkbox"]:checked + span::before{
+    content: "Bella zio!";
+}
+
+
+
+/*QUARTO ESERCIZIO*/
+
+button:hover{
+    display: none; 
+    /*
+    TOLTO FISICAMENTE DALLA PAGINA E GLI ELEMNTI SUCCESSIVI SI ADATTANO DI CONSEGUENZA
+    */
+}
+
+/*
+UN MODO PER RENDERE UN ELEMENTO INVISIBILE E' VISIBILITY:HIDDEN. IN QUESTO CASO L'ELEMENTO CONINUA AD ESSERCI NELLA PAGINA E TUTTI GLI ELEMENTI SUCCESSIVI, DI CONSEGUENZA, CONTINUANO AD ESSERE DOVE SONO.
+*/
+
+/*
+OPACITY INVECE E' COME SE SI METTESSE UN QUALCOSA SOPRA L'ELEMENTO IN QUESTIONE CON DEI VALORI DA 0 A UNO, DOVE 0 NON SI VEDE NULLA E 1 E' TRASPARENTE
+*/
