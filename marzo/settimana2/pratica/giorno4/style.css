@@ -1,0 +1,136 @@
+main {
+  display: flex;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header div:nth-child(2) {
+  margin-left: auto;
+}
+
+.news-detail {
+  border: 1px solid;
+  margin: 20px;
+  padding: 10px;
+}
+
+main > div:nth-child(1) {
+  border-right: 1px solid;
+  flex-grow: 2;
+}
+
+main > div:nth-child(1),
+main > div:nth-child(2) {
+  padding: 20px;
+}
+
+/* main > div:nth-child(1) {
+  flex-grow: 2;
+} */
+
+main > div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.images img {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main ol li {
+  list-style-type: none;
+}
+
+main .brand-details {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+main .brand span {
+  font-weight: bold;
+}
+
+main .brand {
+  padding: 5px;
+}
+
+main .description {
+  border-left: 1px solid;
+  padding: 5px;
+}
+
+/* SOLUZIONE ALBERTO*/
+
+/*
+    main {
+  display: flex;
+}
+main > div:nth-child(1) {
+  flex-grow: 2;
+  border-right: 1px solid grey;
+}
+main > div:nth-child(2) {
+  flex-grow: 1;
+}
+main > div {
+  padding: 0 30px 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header div:nth-child(2) {
+  margin-left: auto;
+}
+
+.news-detail {
+  margin-top: 20px;
+  padding: 0 10px 0 10px;
+  border-top: 1px solid gray;
+  border-right: 3px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: 3px solid gray;
+}
+
+.images {
+  display: flex;
+  flex-flow: row wrap;
+}
+.images > img {
+  width: 200px;
+  padding: 15px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.brand-details {
+  display: flex;
+  border: 1px solid gray;
+}
+.brand {
+  font-weight: bold;
+  flex-grow: 1;
+}
+.brand, .description {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid gray;
+  padding: 5px;
+}
+.description {
+   flex-grow: 4;
+}
+*/

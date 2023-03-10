@@ -1,0 +1,59 @@
+header{
+    display: flex;
+}
+
+header div:last-child{
+    margin-left: auto;
+
+    /*
+        MARGIN:AUTO SIGNIFICA CHE L'ELEMENTO INTERESSATO PRENDE AUTOMATICAMENTE LO SPAZIO LIBERO A DISPOSIZIONE DELL'ELEMENTO STESSO. 
+        SE IO GLI SPECIFICO LA DIREZIONE, COME IN QUESTO CASO "LEFT", SIGINIFICA CHE L'ELEMENTO SI TIENE A SINISTRA TUTTO LO SPAZIO A DISPOSIZIONE E DI CONSEGUENZA SI SPOSTA SI SPOSTA FISICAMENTE A DESTRA.
+    */
+}
+
+header span{
+    padding: 5px;
+}
+
+.lesson-details{
+    display: flex;
+    border: 1px solid grey;
+}
+
+.lesson-topic, 
+.lesson-detail {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.lesson-topic, .flex-grow-1{
+    border-right: 3px solid;
+}
+
+.lesson-details div:first-child{
+    background-color:khaki;
+}
+
+
+.flex-grow-1{
+    flex-grow: 1;
+    background-color: darkseagreen;
+}
+
+.flex-grow-2{
+    flex-grow: 2;
+    background-color:sandybrown;
+}
+
+/*
+    IN QUESTO MODO RIUSCIAMO A DARE UNA PERCENTUALE DI GRANDEZZA ALL'ELEMENTO INTERESSATO.
+    SE CI SONO PIU' FLEX-GROW, AUTOMATICAMENTE CALCOLA LO SPAZIO CHE GLI DIAMO CON IL VALORE.
+    PER ESEMPIO SE ABBIAMO 2 FLEX-GROW CON VALORE 1, SIGNIFICA CHE OGNI ELEMENTO PRENDERA' IL 50% DELLO SPAZIO A DISPOSIZIONE.
+    SE NE ABBIAMO 3 SEMPRE CON FLEX-GROW 1, SIGNIFICA CHE OGNI ELEMENTO HA 1/3 DI SPAZIO A DISPOSIZIONE.
+
+
+*/
+
+/* .lesson-details div:last-child{
+    background-color: coral;
+} */
