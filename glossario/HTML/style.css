@@ -2,6 +2,10 @@ html {
   font-size: 20px;
 }
 
+body {
+  margin: 10px 20px;
+}
+
 header h1 {
   text-align: center;
   color: #0099ff;
@@ -19,8 +23,8 @@ header i p:first-child {
   text-align: center;
 }
 
-section {
-  background-color: bisque;
+.tabella {
+  background-color: rgb(255, 237, 214);
   padding: 0.3rem;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -29,7 +33,6 @@ section table {
   width: 100%;
   text-align: center;
   padding: 10px;
-
 }
 
 section table tr th {
@@ -42,6 +45,6 @@ section table tr td {
   padding: 0.2rem;
 }
 
-span #an{
-  color:red;
+span #an {
+  color: red;
 }
