@@ -207,7 +207,8 @@ main #gallery .card a {
 }
 
 .card img:hover {
-  opacity: 0.5;
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
 
 .card .text img {
