@@ -1,0 +1,193 @@
+html {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*NAVBAR*/
+
+#generalContainer nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#navbar div:nth-child(1) img {
+  width: 150px;
+}
+
+#navbar input[type="text"] {
+  height: 20px;
+  width: 400px;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(180, 180, 180);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+#navbar div:nth-child(3) a {
+  margin: 0 10px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: #06f500;
+  border-radius: 50px;
+}
+
+#navbar div:nth-child(3) a:hover {
+  text-decoration: underline;
+}
+
+/*GALLERY*/
+
+section > main {
+  display: flex;
+}
+
+section #gallery {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+section .container {
+  width: 95%;
+}
+
+section .gallerySections {
+  box-shadow: 5px 5px 10px 10px rgb(231, 231, 231);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section .gallerySections h2 {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+section .images {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  border: 1px solid rgb(180, 180, 180);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+section .card:hover {
+  box-shadow: 5px 5px 5px 5px rgb(231, 231, 231);
+}
+
+section .card img {
+  width: 150px;
+}
+
+section .card p {
+  padding: 0;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+section .card b {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+section .card button {
+  background-color: rgb(0, 145, 255);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  margin: 5px 0;
+}
+
+/*CARRELLO*/
+
+section #shop {
+  height: 100px;
+  width: 25%;
+}
+
+#shop .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#shop .shoppingBag {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.shoppingBag img {
+  width: 80px;
+  margin: 10px;
+}
+
+.items {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.items div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.items div:nth-child(2) p {
+  padding: 0 10px;
+}
+
+#shop button {
+  background-color: fuchsia;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+#shop button:hover {
+  text-decoration: underline;
+}
+
+#shop .tot {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+/*
+BISOGNA ASSOLUTAMENTE EVITARE IL COLORE ROSSO PER LA SCRITTA TOTALE, A DIFFEREZZA (PER ESEMPIO) DI UN EVENTUALE PERCENTUALE DI SCONTO.
+CERCARE DI ALLINEARE AL BORDO SUPERIORE L'APICE DEL PREZZO E IL PREZZO STESSO
+*/
