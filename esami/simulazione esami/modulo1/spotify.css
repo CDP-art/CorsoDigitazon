@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+/*          RIGHT MENU          */
+
+#rightMenu {
+  background-color: black;
+  flex-grow: 1;
+  /* width: 20%; */
+}
+
+#rightMenu section {
+  padding: 20px 0px 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#whiteLogo {
+  width: 130px;
+}
+
+#rightMenu section div:first-child {
+  margin-bottom: 20px;
+}
+
+#rightMenu ul {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+  list-style-type: none;
+  /* margin: 0; */
+}
+
+#rightMenu ul li {
+  margin: 20px 0;
+}
+
+#rightMenu ul a {
+  text-decoration: none;
+  color: #b3b3b3;
+  padding: 10px;
+}
+
+#rightMenu ul a:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+#rightMenu ul:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+#rightMenu ul:nth-child(2) {
+  border-bottom: 1px solid beige;
+  margin-right: 30px;
+}
+
+#rightMenu ul:nth-child(3) {
+  font-weight: normal;
+}
+
+/*              CONTAINER           */
+
+#container {
+  flex-grow: 29;
+}
+
+#container header {
+  background-image: url("images/daft-punk.png");
+}
+
+#container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#container nav > div {
+  display: flex;
+  align-items: center;
+}
+
+.arrowIcon {
+  background-color: #434343;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 20px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+
+.svg-icon circle {
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+
+#container nav > div input {
+  padding: 10px;
+  width: 300px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: 1px solid #424242;
+}
+
+#lens {
+  width: 20px;
+  background-color: white;
+  padding: 8px;
+  border: 1px solid #424242;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#account {
+  background-color: #424242;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 40px;
+}
+
+#account a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+#container header section {
+  padding-left: 50px;
+  color: white;
+}
+
+#container h1 {
+  font-size: 100px;
+  margin: 70px 0;
+}
+
+#container header section p {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+#container > section {
+  display: flex;
+  color: white;
+}
+
+#container > section > div:first-child {
+  flex-grow: 4;
+  background-color: #121212;
+  padding: 0 30px;
+}
+
+#play {
+  display: flex;
+  align-items: center;
+}
+
+#play svg {
+  width: 20px;
+  height: 20px;
+  background-color: #1cb16a;
+  padding: 20px;
+  border-radius: 50%;
+  margin: 20px 30px 30px 10px;
+}
+
+#play svg:hover {
+  transform: scale(1.1);
+  background-color: rgb(0, 159, 0);
+}
+
+#play span {
+  margin-left: 30px;
+  border: 1px solid #424242;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#play span:hover {
+  border: 1px solid white;
+}
+
+.section a {
+  text-decoration: none;
+  color: white;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+.section ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.section li {
+  padding: 20px;
+  flex-direction: row;
+}
+
+.section li:hover {
+  background-color: #2a2929;
+  border-radius: 50px;
+}
+
+#carrello {
+  border-left: 1px solid beige;
+  background-color: #121212;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#carrello h2 {
+  text-align: center;
+}
+
+#carrello h3 {
+  margin-left: 10px;
+}
+
+.lista {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista ol {
+  margin: 0;
+}
+
+.lista ol li {
+  padding: 20px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price span {
+  padding: 20px;
+}
+
+#carrello button {
+  width: 200px;
+  background-color: #1cb16a;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  border: 3px solid green;
+}
