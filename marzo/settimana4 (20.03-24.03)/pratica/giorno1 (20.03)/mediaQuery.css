@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+ul {
+  padding: 0;
+  text-align: center;
+  display: none;
+}
+
+li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(0, 255, 255, 0.229);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: aqua;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+#generalContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+#generalContainer > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 10px 0;
+}
+
+.logo {
+  width: 150px;
+}
+
+#datail {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 95%;
+}
+
+#datail div {
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #generalContainer > header {
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+  }
+
+  /* .logo {
+    display: none;
+  } */
+
+  .icon {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  #datail div {
+    width: 50%;
+    height: 100%;
+  }
+
+  #datail {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
