@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #444;
+}
+
+nav {
+  background-color: #777;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.elements {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftElements {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.leftElements > div:nth-child(1) {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.leftElements img {
+  max-width: 100%;
+}
+
+.leftElements input {
+  height: 30px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.icons {
+  flex-grow: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons a {
+  padding: 5px;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: aqua;
+}
+
+.icons > a:nth-child(1) {
+  border-bottom: 1px solid blue;
+  color: blue;
+}
+
+.rightElements {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.account {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 10px;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+}
+
+.rightSideMenu p {
+  flex-wrap: wrap;
+}
+
+.rightSideMenu {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #444;
+  color: white;
+  flex-grow: 2;
+}
+
+.central {
+  background-color: #777;
+  flex-grow: 4;
+}
+
+.contacts {
+  background-color: #444;
+  flex-grow: 2;
+}
