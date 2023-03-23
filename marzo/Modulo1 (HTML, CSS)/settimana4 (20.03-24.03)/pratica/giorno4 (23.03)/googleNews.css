@@ -10,13 +10,19 @@ html {
     padding: 0;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #F5F8FC;
 }
 
 a {
     color: #505050;
     text-decoration: none;
-    padding: 10px;
 }
+
 
 /*          NAVBAR          */
 
@@ -40,7 +46,6 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .upperMenu>div:nth-child(1) {
     flex-grow: 2;
@@ -76,8 +81,6 @@ nav {
     width: 60px;
 }
 
-
-
 .lowerMenu {
     display: flex;
     align-items: center;
@@ -86,13 +89,19 @@ nav {
     width: 95%;
 }
 
+.lowerMenu a {
+    padding: 10px;
+}
 
+/*          MAIN                */
+
+/*          TITOLO              */
 
 main {
     background-color: #F5F8FC;
     display: flex;
     flex-direction: column;
-    padding: 0 200px;
+    width: 70%;
     margin-top: 140px;
 }
 
@@ -134,18 +143,16 @@ main .meteo img {
 
 main .upperNews {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
 }
 
-section .centralNews {
-    flex-grow: 3;
+section .news {
     background-color: white;
     padding: 10px;
     border-radius: 20px;
 }
 
-.centralNews h2 {
+.news h2 {
     color: #1B72E8;
 }
 
@@ -153,19 +160,30 @@ section .centralNews {
     display: flex;
 }
 
+.article>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+}
+
 .article img {
     width: 300px;
     border-radius: 20px;
 }
 
-.article a {
-    padding: 0;
-    margin: 10px 0;
+
+.article>div:nth-child(2) {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 section .rightNews {
-    background-color: blue;
-    flex-grow: 2;
+    width: 40%;
+    margin-left: 20px;
 }
 
 main .othersNews {
