@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #505050;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*          NAVBAR          */
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9;
+}
+
+.upperMenu {
+    width: 95%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.upperMenu>div:nth-child(1) {
+    flex-grow: 2;
+}
+
+.upperMenu>div:first-child>img {
+    width: 150px;
+}
+
+.upperMenu>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 5;
+}
+
+.upperMenu input {
+    height: 50px;
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+.upperMenu>div:nth-child(3) {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upperMenu .icon img {
+    width: 60px;
+}
+
+
+
+.lowerMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    width: 95%;
+}
+
+
+
+main {
+    background-color: #F5F8FC;
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px;
+    margin-top: 140px;
+}
+
+main>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .meteo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main .meteo div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .meteo div:nth-child(2) span:nth-child(2) {
+    font-size: 2rem;
+}
+
+main .meteo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/*      PARTE CENTRALE      */
+
+
+/* main > section:nth-child(1) */
+
+main .upperNews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .centralNews {
+    flex-grow: 3;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.centralNews h2 {
+    color: #1B72E8;
+}
+
+.article {
+    display: flex;
+}
+
+.article img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.article a {
+    padding: 0;
+    margin: 10px 0;
+}
+
+section .rightNews {
+    background-color: blue;
+    flex-grow: 2;
+}
+
+main .othersNews {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+main .othersNews>div:nth-child(1) {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+main .cards {
+    background-color: pink;
+    display: flex;
+}
+
+main .card2 {
+    background-color: beige;
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+}
