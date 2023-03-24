@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+:root {
+    --wa-grey: #EFF2F5
+}
+
+#generalContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*      CONTATTI SINISTRA         */
+
+
+
+/*
+    OVERFLOW:SCROLL L'HO VISTO SOLAMENTE UNA VOLTA IN UN ESERCIZIO CHE
+    HA FATTO RICCARDO LA MATTINA IN UN CUBO BLU CON DIMENSIONI FISSE
+     E TANTO CONTENUTO CHE STRABORDAVA. ALLORA HO PENSATO DI USARLO NEI DUE PRINCIPALI DIV PER FARLI SCORRERLI SEPARATAMENTE, MA HO DOVUTO METTERE UN ALTEZZA FISSA. MI SONO DOCUMENTATO E HO VISTO CHE L'ESTESIONE VH PER HEIGHT E VW PER LA WIDTH SIGNIFICA CHE PRENDE TUTTO LO SPAZIO DELLA SCHERMATA DISPONIBILE (DA COME L'HO INTERPRETATA IO). AVENDO MESSO IL 100 ALL'ALTEZZA, E' COME SE I DIV HANNO UN ALTEZZA FISSA E QUINDI MI PERMETTE LO SCROLL.
+*/
+#contacts {
+    width: 30%;
+    overflow: scroll;
+    height: 100vh;
+}
+
+#contacts nav {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: var(--wa-grey);
+    position: fixed;
+    width: 30%;
+    top: 0;
+    left: 0;
+}
+
+#contacts nav>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    height: 75px;
+}
+
+.whatsapp {
+    color: #1CD03F;
+    font-size: 2.5rem;
+}
+
+.fa-solid,
+.fa-regular {
+    color: #54646F;
+}
+
+.imgAccount img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+#contacts nav>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#contacts input {
+    width: 300px;
+    height: 40px;
+    background-color: var(--wa-grey);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#contacts section {
+    margin-top: 170px;
+}
+
+section hr {
+    margin: 0;
+}
+
+section .contatto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+
+section .contatto:hover {
+    background-color: #d8d8d8;
+}
+
+.contatto>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/*      CHAT DESTRA          */
+
+/*      NAVBAR      */
+#chat {
+    width: 70%;
+    height: 100vh;
+    overflow: scroll;
+
+}
+
+#chat nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: var(--wa-grey);
+    position: fixed;
+    width: 70%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#chat nav>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 5;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    padding: 10px;
+}
+
+#chat nav img {
+    width: 40px;
+    height: 40px;
+}
+
+#chat nav>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+/*      MAIN        */
+
+main {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+main .messages {
+    display: flex;
+    flex-direction: column;
+}
+
+main .messages>div {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+main .messages>div:nth-child(odd) {
+    background-color: #ffb5b5;
+    align-self: flex-start;
+    min-width: 30%;
+}
+
+main .messages>div:nth-child(even) {
+    background-color: #D9FDD2;
+    min-width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: end;
+    justify-content: end;
+    padding-right: 40px;
+
+}
+
+#chat footer {
+    display: flex;
+    width: 70%;
+    bottom: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--wa-grey);
+    height: 80px;
+    border-radius: 10px;
+}
+
+#chat footer input {
+    width: 700px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+}
