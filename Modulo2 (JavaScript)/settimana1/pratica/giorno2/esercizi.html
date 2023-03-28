@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi giorno 2</title>
+</head>
+
+<body>
+    <script>
+        // ex 1
+        // trovare la stringa più lunga tra due stringhe salvate in 2 variabili e stamparla in output con l'aggiunta del messaggio 'la stringa più lunga è:'
+
+        let a = "ciao";
+        let b = "supercalifragilistichespiralidoso";
+        let c = "mare"
+
+        let lunghezza
+
+        let primoMessaggio = "La stringa corta é: "
+        let secondoMessaggio = "La stringa più lunga è: "
+        let terzoMessaggio = "La stringa è uguale a "
+
+        if (b.length <= a.length) {
+            lunghezza = primoMessaggio + a
+        } else if (b.length <= c.length) {
+            lunghezza = terzoMessaggio + c
+        } else {
+            lunghezza = secondoMessaggio + b
+        }
+
+        console.log(lunghezza);
+
+        // ex 2
+        // crea una variabile stringa con un valore a piacere e stampa i suoi caratteri invertiti separati da -, su un'unica riga
+        // es mela -> a-l-e-m
+
+        let gioco = "dragonball"
+
+        console.log(gioco.length);
+
+        let space = "_"
+
+        console.log(
+            gioco.charAt(9) + space +
+            gioco.charAt(8) + space +
+            gioco.charAt(7) + space +
+            gioco.charAt(6) + space +
+            gioco.charAt(5) + space +
+            gioco.charAt(4) + space +
+            gioco.charAt(3) + space +
+            gioco.charAt(2) + space +
+            gioco.charAt(1) + space +
+            gioco.charAt(0)
+        );
+
+        // ex 3
+        // crea due variabili x e y con valori a piacere.
+        // se x è minore o uguale a y, stampa green.
+        // in quel contesto se y è uguale a zero, stampa red.
+        // se è maggiore di y, stampa blue
+
+        let x = -1;
+        let y = 0;
+
+        if (x <= y) {
+            console.log("green");
+            if (y == 0) {
+                console.log("red")
+            }
+        } else {
+            console.log("blue");
+        }
+
+
+        // ex 4
+        // date due variabili con valori 'kiwi' e 'banana', stampa in output
+        // il seguente risultato (la prima e la terza lettera della prima string concatenata ad un underscore e alla seconda stringa maiuscola):
+        // kw_BANANA
+
+        let frutto1 = "kiwi"
+        let frutto2 = "banana"
+
+        console.log(
+            frutto1.charAt(0) +
+            frutto1.charAt(2) +
+            space +
+            frutto2.toUpperCase()
+        )
+
+
+
+
+    </script>
+</body>
+
+</html>

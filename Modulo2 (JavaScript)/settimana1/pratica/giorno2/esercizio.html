@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+
+        //Scrivere due stringhe racchiuse fra variabili e portare a video la stringa più lunga
+
+        let stringa1 = "ciao";
+        let stringa2 = "buona giornata";
+        let messaggio1 = "La stringa più lunga è: ";
+        let messaggio2 = "Le due stringhe sono uguali";
+
+
+
+        console.log(stringa1.length);
+        console.log(stringa2.length);
+
+
+        let messaggioFinale
+
+        if (stringa1.length > stringa2.length) {
+            messaggioFinale = messaggio1 + stringa1;
+        } else if (stringa2.length > stringa1.length) {
+            messaggioFinale = messaggio1 + stringa2;
+        } else {
+            messaggioFinale = messaggio2
+        }
+
+        console.log(messaggioFinale)
+
+
+        //
+
+
+        let x = "bella zio"
+        let y = "bella fra, come butta?"
+
+        console.log(x.length);
+        console.log(y.length)
+
+        if (x.length >= y.length) {
+            console.log("La stringa più lunga è: " + x)
+        } else {
+            console.log("La stringa più lunga è: " + y)
+        }
+
+        // SECONDO ESERCIZIO
+        // SCRIVERE UNA STRINGA E STAMPARLA CON I CARATTERI AL CONTRARIO DA SEPARATORI
+
+        let name = "claudio";
+        console.log(name.length)
+
+        let space = "_"
+
+        console.log(
+            name.charAt(7) +
+            name.charAt(6) + space +
+            name.charAt(5) + space +
+            name.charAt(4) + space +
+            name.charAt(3) + space +
+            name.charAt(2) + space +
+            name.charAt(1) + space +
+            name.charAt(0)
+        )
+
+
+
+
+
+    </script>
+</body>
+
+</html>

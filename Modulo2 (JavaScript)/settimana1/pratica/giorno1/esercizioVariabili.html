@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Creare variabili numeriche e controllare quale di queste 3 ha il valore maggiore
+        //C'è un metodo (a livello di logica) di fare questo controllo?
+
+        const a = 150;
+        const b = 250;
+        const c = 175;
+
+        let max
+        if (a > b) {
+            max = a
+        } else {
+            max = b
+        }
+
+        if (max > c) {
+            max = max;
+        } else {
+            max = c;
+        }
+
+        console.log("Valore maggiore: " + max);
+
+        // OPPURE
+
+        if (a > b) {
+            if (a > c) {
+                max = a
+            } else {
+                max = c
+            }
+        } else {
+            if (b > c) {
+                max = b
+            } else {
+                max = c
+            }
+        }
+
+        console.log("Valore maggiore: " + max);
+
+
+        //
+
+
+        let d = 300;
+        let e = 100;
+        let f = 345;
+
+        if (d > f && e < d) {
+            max = d;
+        } else if (e > d && e < f) {
+            max = e;
+        } else {
+            max = f;
+        }
+
+        console.log("Valore maggiore: " + max);
+
+    </script>
+
+</body>
+
+</html>

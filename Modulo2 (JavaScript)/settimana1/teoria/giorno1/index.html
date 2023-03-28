@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div>Ciao JavaScript</div>
+    <script>
+
+
+
+        //VARIABILI
+        var x = 10; // var = nomeVariabile = valoreVariabile
+        console.log(x); //serve per stampare a video 
+        console.log(typeof x);
+
+        x = 20; //riassegnamento/modifica della variabile
+        console.log(x);
+        console.log(typeof x);
+
+        x = "bella zio";
+        console.log(x);
+        console.log(typeof x); //typeof è un operatore che serve per mostrare che tipo di variabile (in questo caso) sia.
+
+
+
+        //operazione matematiche
+        var z = 10 + 4;
+        console.log(z / 7);
+
+
+
+        //Concatenazione di due variabili
+        var word = "Corso";
+        var word2 = "!"
+        console.log(word + "JavaScript" + word2);
+
+        var a = "sole", b = a + " o pioggia";
+        console.log(b);
+
+
+        //Condizione if
+        x = 10;
+        y = 5;
+
+        if (x > y) {
+            console.log("blue");
+        }
+        else {
+            console.log("red");
+        }
+
+
+        if (x >= y && y > 0) {      //Operatore logico "and"
+            console.log("green");
+        }
+
+        if (x < y || y > 0) {
+            console.log("pink");    //Operatore logico "or"
+        }
+
+        if (x > 0) {
+            console.log("x è maggiore di 0");
+
+            y = 1
+            if (y > 4) {
+                console.log("y è maggiore di 4");
+            }
+            else {
+                console.log("y è minore di 4");
+            }
+            if (y == 1) {
+                console.log("y è 1");
+            }
+        }
+
+        // =    ->  Assegnazione 
+        // ==   ->  Comparazione fra due elementi
+
+        console.log("-----------------------------------------");
+
+
+        // La variabile const è una variabile COSTANTE, cioè che non cambia mai. Per esempio una data di nascita è una costante, perchè rimarrà fissa per tutto il codice. 
+
+
+        const admin_Role = "admin";
+        const user_Role = "user";
+        const guest_Role = "guest";
+
+        var userName = "Claudio";
+        var userLastName = "De Paolis";
+        var userRole = guest_Role;
+
+
+        if (userRole == "admin") {
+            console.log("Benvenuto " + userName + " " + userLastName);
+            console.log("Hai i privilegi di un Admin!");
+        }
+
+        //Else if sarebbe un "altrimenti se". E' come se in un range di si o no o alto e basso, vai a specifare il perchè si, il perchè no o l'altezza. 
+
+
+        else if (userRole == "user") {
+            console.log("Benvenuto " + userName + " " + userLastName);
+            console.log("NON hai nessun privilegio!. Non sei Admin!");
+        }
+        else if (userRole == "guest") {
+            console.log("Benvenuto " + userName + " " + userLastName);
+            console.log("Hai i privilegi di un Guest!");
+        }
+
+
+        // La variabile let vale solamente all'interno del contesto dove viene dichiarato. Se poi vine letto esternamente, allora da errore. La variabile var invece, viene sempre letta. Visto che inizialmente esisteva solamente il var, ma è stato riputato inutile visto che non ha senso trasportare per tutto il codice sempre la stessa variabile e si usano comunque solamente dove serve, allora è molto comune usare sempre let, perchè esternamente viene sempre letta come var, ed eventualmente la si usa all'interno di un contesto dove serve. 
+        var x = 10;
+
+        if (x > 0) {
+            console.log(x);
+
+            let y = 20;
+            console.log(y);
+        }
+    </script>
+</body>
+
+</html>
