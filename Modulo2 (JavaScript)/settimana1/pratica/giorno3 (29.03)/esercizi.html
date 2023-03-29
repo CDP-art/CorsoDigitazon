@@ -27,10 +27,6 @@
             console.log(numeri[i]);
         }
 
-        for (let i = 0; i >= numeri.length; i++) {
-            console.log(numeri[i]);
-        }
-
         // ESERCIZIO DUE
         /*
         Ex 2:
@@ -39,21 +35,23 @@
         stampare in output tutti i valori dell'array che NON terminano con la lettera 'o'
         */
 
+        // 1 -> Creare un array di nomi
+        // 2 -> selezionare un indice
+        // 3 -> controllare la fine
+        // 4 -> if fine="o"=false, else true
 
         let nomi = ['mario', 'luigi', 'peach', 'daisy'];
+        // console.log(nomi);
+        // console.log(nomi.length);
 
-        // for (let i = 0; i <= nomi.length; i++) {
-        //     let string = nomi[i];
-        //     if (string.charAt(string.length - 1) !== "o") {
-        //         console.log(nomi[i]);
-        //     }
-        // }
+        for (let i = 0; i < nomi.length; i++) {
+            // console.log(nomi[i]);
+            // console.log(nomi[i].charAt(nomi[i].length - 1));
 
-        // let x = ['mario', 'luigi', 'peach', 'daisy', 'giorgia']
-
-        // for (let i = 0, s = x[i]; i < x.length; i++)
-        //     if (s.charAt(s.length - 1) != 'o') console.log(s)
-
+            if (nomi[i].charAt(nomi[i].length - 1) !== "o") {
+                console.log("I nomi che non finscono per 'o' sono: " + nomi[i]);
+            }
+        }
 
         //ESERCIZIO 3
         /*
@@ -68,17 +66,22 @@
         (la prima e l'ultima lettera di ogni valore dell'array in senso invertito)
         */
 
-        let names = ['mario', 'luigi', 'peach', 'daisy'];
+        /*
+        1 -> Variabile di un array con i nomi
+        2 -> stampare i nomi in ordine contrario
+             (ciclo for inverso);
+        3 -> prendere le lettere con charAt
+        4 -> metterle maiusole
+        */
+
+
+        let names = ["Gianluca", "Pierpaolo", "Gianluigi", "Tarquinio Prisco"];
+        console.log(names);
 
         for (let i = names.length - 1; i >= 0; i--) {
-
+            let iniziali = names[i].charAt(0) + names[i].charAt(names[i].length - 1);
+            console.log(iniziali.toUpperCase());
         }
-
-
-
-
-
-
 
         /*
         Ex 4:
@@ -87,14 +90,42 @@
         stampare in output SOLO il nome più lungo tra quelli presenti nell'array (se i valori dell'array cambiano, anche il risultato cambia senza alterare l'algoritmo)
         */
 
+        // creare array
+        //stampare solo nome più lungo
+
+        let x = ["mario", "stefania", "luca", "lee"];
+        console.log(x);
+
+        let max = "";
+        console.log(max.length);
+
+
+        for (let i = 0; i < x.length; i++) {
+            console.log(x[i].length);
+            console.log(x[i]);
+
+            if (x[i].length > max.length) {
+                max = x[i]
+
+            }
+        }
+
+        console.log("Il nome più lungo è: " + max);
 
         /*
         Ex 5:
         creare una variabile che contenga il seguente array
         [17, 5, 87, 14]
         stampa in output la somma totale di tutti i numeri contenuti nell'array nella modalità più modulare.
-                
         */
+
+        let numbers = [17, 5, 87, 14];
+        let sum = 0
+
+        for (let i = 0; i < numbers.length; i++) {
+            sum = sum + numbers[i]
+        }
+        console.log("La somma dei numeri è: " + sum);
 
     </script>
 </body>
