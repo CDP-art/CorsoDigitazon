@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nomi = ["Claudio", "Emanuele", "Riccardo", "Davide", "Tommaso", "Giacomo", "Aldo", "Giovanni", "Alberto"];
+        console.log(nomi);
+        console.log(nomi[4]);
+        console.log(nomi.length);
+
+        nomi.push("Gianluigi");
+        console.log(nomi);
+        console.log(nomi[9]);
+
+        /*
+            FOR CON 3 SEGMENTI:
+            1 SEGMENTO = CREAZIONE CONTATORE
+
+            2 SEGMENTO = CONDIZIONE DI USCITA DAL CICLO. RIMANGO NEL CICLO FIN TANTO CHE LA CONDIZIONE E' TRUE
+
+            3 SEGMENTO = MODIFICA DEL CONTATORE
+        
+        */
+
+        for (let i = 0; i < nomi.length; i++) {
+            console.log(nomi[i]);
+        }
+
+        //  MATRICE -> ARRAY NEGLI ARRAY
+
+        let aule = [
+            ["Tommaso", "Gianluca", "Riccardo", "Giuseppe"],
+            ["Alberto", "Riccardo", "Francesco"],
+            ["Paolo", "Vittorio", "Pasquale"]
+        ]
+
+        console.log(aule);
+
+
+    </script>
+</body>
+
+</html>
