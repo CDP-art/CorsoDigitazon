@@ -38,9 +38,9 @@
         // 1 -> Creare un array di nomi
         // 2 -> selezionare un indice
         // 3 -> controllare la fine
-        // 4 -> if fine="o"=false, else true
+        // 4 -> if fine="o" =false, else true
 
-        let nomi = ['mario', 'luigi', 'peach', 'daisy'];
+        let nomi = ['mario', 'luigi', 'peach', 'daisy', "paolo", "anna"];
         // console.log(nomi);
         // console.log(nomi.length);
 
@@ -48,7 +48,7 @@
             // console.log(nomi[i]);
             // console.log(nomi[i].charAt(nomi[i].length - 1));
 
-            if (nomi[i].charAt(nomi[i].length - 1) !== "o") {
+            if (nomi[i].charAt(nomi[i].length - 1) != "o") {
                 console.log("I nomi che non finscono per 'o' sono: " + nomi[i]);
             }
         }
@@ -79,6 +79,7 @@
         console.log(names);
 
         for (let i = names.length - 1; i >= 0; i--) {
+            //console.log(names[i].charAt(0) + names[i].charAt(names[i].length - 1);
             let iniziali = names[i].charAt(0) + names[i].charAt(names[i].length - 1);
             console.log(iniziali.toUpperCase());
         }
@@ -101,8 +102,8 @@
 
 
         for (let i = 0; i < x.length; i++) {
-            console.log(x[i].length);
-            console.log(x[i]);
+            // console.log(x[i].length);
+            // console.log(x[i]);
 
             if (x[i].length > max.length) {
                 max = x[i]
@@ -124,6 +125,8 @@
 
         for (let i = 0; i < numbers.length; i++) {
             sum = sum + numbers[i]
+            console.log(numbers[i]);
+            console.log([sum]);
         }
         console.log("La somma dei numeri è: " + sum);
 
