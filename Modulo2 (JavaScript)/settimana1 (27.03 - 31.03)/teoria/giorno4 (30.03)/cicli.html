@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo for</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Date 3 stringhe con valori a piacere, stampare in output quante delle tre stringhe realizzate iniziano con la lettera 'a'
+        */
+
+        //Creare un array
+        //prendere gli indici
+        //prendere gli iniziali
+        // if names[indice] = inizia "a" = true
+
+        let cose = ["Agenda", "Tovaglaia", "Astuccio", "Tavolo", "Computer", "Armadio"];
+        // console.log(names);
+        // console.log(names.length);
+
+        for (let i = 0; i < cose.length; i++) {
+            // console.log(names[i]);
+            // console.log((names[i].length));
+            // console.log(names[i].charAt(names[i]));
+
+            if (cose[i].charAt(cose[i]) == "A") {
+                console.log("I nomi che iniziano con 'A' sono: " + cose[i]);
+            }
+        }
+
+
+
+        //creare tre variabili
+        //creare un contatore per tenere traccia di quelle che iniziano con a o 0
+        //controllo la prima stringa e vedo se inizia con la lettera A. Se true, incrementa di 1 il contatore
+        //controllo la seconda stringa e vedo se inizia con la lettera A. Se true, incrementa di 1 il contatore
+        //controllo la terza stringa e vedo se inizia con la lettera A. Se true, incrementa di 1 il contatore
+
+        let primo = "Buona giornata";
+        let secondo = "Anvedi oh!!";
+        let terzo = "Buongiorno";
+
+        let sum = 0;
+
+        if (primo.charAt(0) == "A") {
+            sum = sum + 1
+        }
+
+        if (secondo.charAt(0) == "A") {
+            sum = sum + 1
+        }
+
+        if (terzo.charAt(0) == "A") {
+            sum = sum + 1
+        }
+
+        console.log(sum);
+
+
+
+
+        let stringhe = ["Buona giornata", "Anvedi oh!!", "Buongiorno"];
+        let somma = 0;
+
+        for (let i = 0; i < stringhe.length; i++) {
+            //if( inizia con a, stampala, altrimenti niente)
+            // console.log(stringhe[i].charAt(stringhe[0]));
+
+            if (stringhe[i].charAt(stringhe[0]) == "A") {
+                console.log("La stringa che inizia con A è: " + stringhe[i]);
+
+            } else {
+                console.log("Le altre sono: " + stringhe[i]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
