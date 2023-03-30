@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Nota: PRIMA DEL CODICE, REALIZZARE GLI ALGORITMI IN STEP NEI COMMENTI, CHE DEVONO ESSERE VISIBILI NEL CODICE DELL'ESERCIZIO
+        */
+
+        // ESERCIZIO 1
+        //dato un array di 4 stringhe a piacere, stampare ogni valore stringa invertito (es 'ciao' diventa 'oaic', ...)
+
+        //creare un array con 4 strighe
+        //prendere ogni indice
+        //prendere l'ultima lettera
+        //partire dalla fine
+        //creare secondo ciclo per indice array
+
+
+        let parole = ["banco", "sedia", "lavagna", "gessetto"];
+        let reverse = ""
+        // console.log(parole);
+        // console.log(parole.length);
+
+        for (let i = 0; i < parole.length; i++) {
+            reverse = ""
+            for (let j = parole[i].length - 1; j >= 0; j--) {
+                reverse = reverse + parole[i][j];
+            }
+            console.log(reverse);
+        }
+
+        console.log("--------------------------------------");
+
+
+        //Ex 2:
+        //dato un array di 10 numeri a piacere, stampare quanti sono i numeri positivi, quelli negativi, quelli dispari e quelli pari(per trovare il resto di una divisione utilizzare l'operatore %)
+
+        //creare un array con 10 numeri a piacere
+        //creare 4 contatori (uno per specie) 
+        //suddividere i numeri in pari, dispari, positivi e negativi
+        //numeri divisi per 2 = pari altrimenti dispari
+        // + positivi - negativi
+
+
+
+        let numeri = [5, 6, 3, 8, 76, 432, 12, 23, 9, -23, -45, 82];
+
+
+        // let count = 0
+
+        // for (let i = 0; i < numeri.length; i++) {
+        //     if (count > count + numeri[i]) {
+        //         console.log("I numeri negativi sono: " + numeri[i]);
+        //     }
+        //     if (count < count + numeri[i]) {
+        //         console.log("I numeri positivi sono: " + numeri[i]);
+        //     }
+        //     if (count == count + numeri[i] % 2) {
+        //         console.log("I numeri pari sono: " + numeri[i]);
+        //     } else {
+        //         console.log("I numeri dispari sono: " + numeri[i]);
+        //     }
+        // }
+
+        let positivo = 0
+        let negativo = 0
+        let paro = 0
+        let disparo = 0
+
+        for (let i = 0; i < numeri.length; i++) {
+            if (numeri[i] >= 0) {
+                positivo += 1
+            } else {
+                negativo += 1
+            }
+
+            if (numeri[i] % 2 == 0) {
+                paro += 1
+            } else {
+                disparo += 1
+            }
+        }
+
+        console.log("I numeri positivi sono " + positivo);
+        console.log("I numeri negativi sono " + negativo);
+        console.log("I numeri pari sono " + paro);
+        console.log("I numeri dispari sono " + disparo);
+
+
+        console.log("--------------------------------------");
+
+        // Ex 3:
+        //dato un array di 3 stringhe a piacere, stampare quante di queste stringhe iniziano con il valore 'a' e terminano con il valore '_'
+
+        //Creare un array
+        //Creare un contatore
+        //Creare un ciclo
+        //Creare un if
+
+        let citta = ["Roma", "Napoli", "Ancona", "Ascoli Piceno_", "Firenze_", "Agrigent_"];
+
+        let count = 0;
+
+        for (let i = 0; i < citta.length; i++) {
+            if (citta[i].charAt(0) == "A" && citta[i].charAt(citta[i].length - 1) == "_") {
+                count += 1
+            }
+        }
+
+        console.log(count);
+
+
+        console.log("--------------------------------------");
+        /*
+        Ex 4:
+        data una stringa a piacere, 
+        SE questa contiene una vocale, un underscore, un dollaro e un numero, stampare 'password OK', altrimenti, stampare 'password NOT OK'
+        */
+
+        //creare una variabile con una stringa
+        //prendere valore stringa
+        //creare contatori per ogni situazione(vocale, underscore, dollaro, numero)
+        //Condizione if
+        //stampa
+
+        let password = "Fronzoli_$897"
+
+        let x = false
+        let y = false
+        let z = false
+        let w = false
+
+        for (let i = 0; i < password.length; i++) {
+
+            if (password[i] == "a" || password[i] == "e" || password[i] == "i" || password[i] == "o" || password[i] == "u") {
+                x = true
+            }
+
+            if (password[i] == "_") {
+                y = true
+            }
+
+            if (password[i] == "$") {
+                z = true
+            }
+
+            if (password[i] >= 0) {
+                w = true
+            }
+
+        }
+
+        if (x == true && y == true && z == true && w == true) {
+            console.log("password OK");
+        } else {
+            console.log("password NON ok");
+        }
+
+
+        /*
+        dato un array di 5 valori ETEROGENEI a piacere, stabilire:
+        - quante stringhe ci sono
+        - quanti numeri ci sono
+        - quanti booleani ci sono
+        - qual è il tipo di dato maggiormente presente nell'array
+        */
+
+        //creare un array
+        //contatore stringhe
+        //contatore array
+        //contatore booleano
+        //contatore numeri
+        //creo ciclo
+        //creare controllo condizionale stringa
+        //stampo
+
+
+        console.log("--------------------------------------");
+
+
+        let values = [true, "ciao", "albero", 24, false, 15, 54, 87, "javascript", "buona sera"];
+
+        let stringa = 0;
+        let numbers = 0;
+        let boolean = true;
+
+        for (let i = 0; i < values.length; i++) {
+            if (typeof values[i] == "string") {
+                stringa++
+            }
+
+            if (typeof values[i] == "number") {
+                numbers++
+            }
+
+            if (typeof values[i] == "boolean") {
+                boolean++
+            }
+        }
+
+        console.log(stringa);
+        console.log(numbers);
+        console.log(boolean);
+        console.log("-----");
+
+        if (stringa > numbers) {
+            if (stringa > boolean) {
+                console.log("Le stringhe sono il valore più presente");
+            } else {
+                console.log("I booleani sono il valore più presente");
+            }
+        } else {
+            if (numbers > boolean) {
+                console.log("I numeri sono il valore più presente");
+            } else {
+                console.log("I booleani sono il valore più presente");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
