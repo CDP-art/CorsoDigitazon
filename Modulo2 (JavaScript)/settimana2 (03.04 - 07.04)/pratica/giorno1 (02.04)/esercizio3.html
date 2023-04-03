@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 3</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Ex 3
+        creare una funzione makeElement, che prende in ingresso una stringa che identifica il tipo di elemento HTML da generare, una stringa che identifica il suo id, una stringa che identifica il suo contenuto, e un booleano che indica se chiudere o meno il tag (false indica un tag a chiusura implicita, true a chiusura esplicita)
+        La funzione restituisce la stringa formattata correttamente che rappresenta un elemento HTML. In fase di chiamata, stamparla in console.
+        Usare i seguenti valori:
+
+        makeElement('input', 'myInput', '', false)  ->  <input id="myInput">
+        makeElement('div', 'box', 'javascript', true)  -> <div id="box">javascript</div>
+        */
+
+        function makeElement(tipoHTML, id, contenuto, chiusuraTag) {
+
+
+            if (tipoHTML == "div" || tipoHTML == "span" || tipoHTML == "p" || tipoHTML == "h1") {
+                chiusuraTag == true;
+                console.log("<" + tipoHTML + " id=" + "'" + id + "'" + ">" + contenuto + "</" + tipoHTML + ">");
+            } else if (tipoHTML == "input" || tipoHTML == "img") {
+                chiusuraTag == false;
+                console.log("<" + tipoHTML + " id=" + "'" + id + "'" + ">");
+            }
+
+
+
+        }
+
+        makeElement('div', 'box', 'javascript', true);
+        makeElement('input', 'myInput', '', false)
+        makeElement("img", "myImg", "", false)
+        makeElement("h1", "titolo", "esercizi", true)
+
+    </script>
+</body>
+
+</html>

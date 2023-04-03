@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        /*Ex 1
+        creare la funzione selector, che accetta una stringa in ingresso è in grado di stabilire se è un selettore CSS valido(selettore semplice, senza annidamenti), tra:
+        - selettore di id
+        - selettore di classe
+        - selettore di un elemento tra div, span e img
+
+        Se lo è, restituisce true, altrimenti false.
+        In fase di chiamata, stampare un apposito messaggio in ouput, per ognuna delle seguenti chiamate:
+        selector('#myDiv') -> è un selettore valido, di id
+        selector('.myDiv') -> è un selettore valido, di classe
+        selector('div') -> è un selettore valido, di elemento div
+        selector('paperino') -> non è un selettore valido
+        selector('ul') -> non è un selettore valido(non è div, span o img)
+        */
+
+
+        function selector(stringa) {
+            let valid = true
+
+            if (stringa[0] == "#") {
+                for (let i = 0; i <= 9; i++) {
+                    if (stringa[1] == i) {
+                        valid = false
+                    }
+                }
+
+                if (valid) {
+                    console.log(stringa + " è un selettore valido, di id");
+                } else {
+                    console.log(stringa + " non è un selettore valido");
+                }
+            }
+
+
+
+
+            if (stringa[0] == ".") {
+                for (let i = 0; i <= 9; i++) {
+                    if (stringa[1] == i) {
+                        valid = false
+                    }
+                }
+                if (valid) {
+                    console.log(stringa + " è un selettore valido, di classe");
+                } else {
+                    console.log(stringa + "non è un selettore valido");
+                }
+            }
+
+
+
+            if (stringa == "div" || stringa == "span" || stringa == "img") {
+
+                console.log(stringa + " è un selettore valido, di elemento div");
+
+
+            } else if (stringa == "ul") {
+
+                console.log(stringa + " non è un selettore valido(non è div, span o img)");
+
+            } else {
+
+                console.log(stringa + " non è un selettore valido");
+            }
+        }
+
+        selector('#myDiv');
+        selector('.secondo');
+        selector('div');
+        selector('paperino');
+        selector('ul');
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Ex 1
+        creare una funzione 'ope' che prende in ingresso una stringa e due numeri.
+        controlla il valore della stringa.
+        Se è '+' restituisci la somma dei due numeri
+        Se è '-' restituisci la differenza dei due numeri
+        Se è '*' o 'x' restituisci la moltiplicazione dei due numeri
+        Se è '/' restituisci la divisione dei due numeri
+        altrimenti restituisci 0
+
+        Chiama la funzione ope 4 volte variando ogni volta i valori utilizzati e stampa in console i risultati
+        */
+
+        //creare una funzione ope
+        //inserisci come parametri una stringa e due volori
+        //se stringa == "+" allora somma (ripeti per tutte le operazioni)
+        //altrimenti 0
+
+        function ope(n1, stringa, n2) {
+
+            if (stringa == "+") {
+                return n1 + n2;
+            } else if (stringa == "-") {
+                return n1 - n2;
+            } else if (stringa == "*" || stringa == "x") {
+                return n1 * n2
+            } else if (stringa == "/") {
+                return n1 / n2
+            } else {
+                return 0;
+            }
+        }
+
+        const r1 = ope(230, "/", 10)
+        console.log(r1);
+
+
+    </script>
+</body>
+
+</html>

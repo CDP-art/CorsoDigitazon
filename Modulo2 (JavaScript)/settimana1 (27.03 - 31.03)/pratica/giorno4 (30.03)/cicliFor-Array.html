@@ -19,15 +19,16 @@
 
         //creare un array con 4 strighe
         //prendere ogni indice
+        //entrare nell'indice (ogni singola stringa) con un altro ciclo
         //prendere l'ultima lettera
         //partire dalla fine
-        //creare secondo ciclo per indice array
+
 
 
         let parole = ["banco", "sedia", "lavagna", "gessetto"];
         let reverse = ""
-        // console.log(parole);
-        // console.log(parole.length);
+        console.log(parole);
+        console.log(parole.length);
 
         for (let i = 0; i < parole.length; i++) {
             reverse = ""
@@ -36,6 +37,8 @@
             }
             console.log(reverse);
         }
+
+
 
         console.log("--------------------------------------");
 
@@ -142,17 +145,11 @@
 
             if (password[i] == "a" || password[i] == "e" || password[i] == "i" || password[i] == "o" || password[i] == "u") {
                 x = true
-            }
-
-            if (password[i] == "_") {
-                y = true
-            }
-
-            if (password[i] == "$") {
-                z = true
-            }
-
-            if (password[i] >= 0) {
+            } else if (password[i] == "_") {
+                y = true;
+            } else if (password[i] == "$") {
+                z = true;
+            } else if (password[i] >= 0) {
                 w = true
             }
 
@@ -224,6 +221,9 @@
                 console.log("I booleani sono il valore più presente");
             }
         }
+
+
+
 
     </script>
 </body>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni2</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        Ex 2
+        creare una funzione 'invertString' che prende in ingresso una stringa e la restituisce invertita.
+        Chiamare la funzione con i seguenti valori e stampare i risulati in console:
+        - javascript
+        - console
+        - anna
+        - 100
+        Nota: se il valore non è una stringa, ma un numero, stampa il numero moltiplicato per 10.
+        Se il valore non è una stringa ne un numero, stampa 'errore'*/
+
+
+        //funzione invertString con parametro stringa
+        // condizione se stringa true or false
+        //prendere i valori di stringa e restituirli invertiti
+        // se numero, moltiplica per 10
+        // se il valore non è ne numero ne stringa -> allora console.log("errore")
+
+
+        function invertString(stringa) {
+
+            let array = []
+
+            if (typeof stringa == "string") {
+
+                for (let i = stringa.length - 1; i >= 0; i--) {
+                    array.push(stringa[i])
+                }
+            } else if (typeof stringa == "number") {
+                stringa *= 10;
+                console.log(stringa);
+            } else {
+                console.log("error");
+            }
+
+            console.log(array);
+        }
+
+        console.log(invertString("fatto"))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni</title>
+</head>
+
+<body>
+    <h1>FUNZIONI</h1>
+    <script>
+        // costruire una funzione
+        // funzione nomeFunzione ()
+
+        function greet() {
+            console.log("ciao");
+        }
+
+        function separator() {
+            console.log("+++++++++++++++")
+        }
+
+        function cycle() {
+            separator();
+            for (let i = 1; i <= 5; i++) {
+                console.log(i);
+            }
+        }
+
+        function cycleInverse() {
+            separator();
+            for (let i = 5; i >= 1; i--) {
+                console.log(i);
+            }
+        }
+
+        function greetUser(username) // lista di parametri (variabile locale per la funzione). Quando andiamo a richiamare la funzione è come se automamente si eseguisse "username = "quelloCheScrivamoAlRichiamo"
+        {
+            console.log("welcome" + username);
+        }
+
+
+        //usando return stai chiamando un parametro in uscita.
+        //quindi immagazzina il valore e te lo rende in uscita.
+        function greetUser2() {
+            return "welcome Luigi"
+
+        }
+
+        function sum(x, y) {
+            return x + y
+        }
+
+        let values = [
+            [13, 85], [34, 89], [23, 98], [14, 76]
+        ]
+
+        for (let i = 0; i < values.length; i++) {
+            let result = sum(values[i][0], values[i][1])
+            console.log("La somma dell'array alla posizione " + i + " è: " + result);
+        }
+
+
+        function cycle2(mode) {
+            separator()
+            if (mode == "linear") {
+                for (let i = 0; i <= 5; i++) {
+                    console.log(i);
+                }
+            } else if (mode == "inverse") {
+                for (let i = 5; i >= 1; i--) {
+                    console.log(i);
+                }
+            }
+        }
+
+        function cancello(azione) {
+            if (azione == "apri") {
+                console.log("stai aprendo il cancello");
+            } else if (azione == "chiudi") {
+                console.log("stai chiudendo il cancello");
+            }
+        }
+
+        // richiamare una funzione
+        // nomeFunzione ([... lista dei parametri])
+
+        greet()
+
+        cycle()
+        cycle()
+
+        cycleInverse()
+        cycleInverse()
+
+        greetUser("mario") //lista di argomenti
+        // in questo caso la funzione ha un parametro di entrata
+
+        //console.log(argomenti)
+        //Per richiamare la funziona che ha un "return", un parametro in uscita, allora bisogna inserire all'interno di una variabile la funzione e poi la si può stampare con il console.log oppure si può riutilizzare la varibile (con la mia funzione) all'interno del mio codice
+
+        let utente = greetUser2
+        console.log(utente());
+        console.log(greetUser2());
+
+        let m = "linear";
+        console.log(cycle2("linear"));
+        console.log(cycle2("inverse"));
+        console.log(cycle2(m));
+
+        console.log(cancello("apri"));
+    </script>
+</body>
+
+</html>
