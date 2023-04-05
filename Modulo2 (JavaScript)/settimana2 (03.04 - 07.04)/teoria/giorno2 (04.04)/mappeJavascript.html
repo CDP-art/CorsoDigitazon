@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+</head>
+
+<body>
+    <script>
+        //creo una mappa vuota
+
+        const m1 = new Map();
+        console.log(m1);
+
+        m1.set("name", "Claudio");
+        m1.set("lastname", "De Paolis");
+        m1.set("skill", ["html", "css", "javascript"]);
+
+
+        console.log(m1);
+        console.log(m1.size); //ti dice la lunghezza della mappa
+
+        //lettura
+        console.log(m1.get("name"));
+        console.log(m1.get("name") + " " + m1.get("lastname") + " " + m1.get("skill"));
+
+        function getMapInfo(map) {
+            if (map instanceof Map == false) {
+                console.log('Errore! Devi utilizzare una mappa!');
+                return
+            }
+
+            let s = ''
+
+            if (map.has('name')) s += map.get('name') + ' '
+            if (map.has('lastname')) s += map.get('lastname') + ' '
+            if (map.has('skills')) s += map.get('skills')
+
+            console.log(s.trim());
+        }
+
+        getMapInfo(m1)
+
+        //check
+        console.log(m1.has("lastname")); //ti torna true perchè effettivamente ha una chiave chiamata "lastname"
+
+        const m2 = new Map()
+        m2.set('name', 'Luigi')
+        m2.set('skills', ['php'])
+
+        getMapInfo(m2)
+
+        console.log('-------------------');
+
+        //iterare (fare una cosa più volte)
+
+        function iterateOnMap(valore, chiave) {
+            if (typeof valore == 'string') {
+                console.log('la chiave ' + chiave + ' ha un valore stringa');
+            }
+            else if (Array.isArray(valore)) {
+                console.log('la chiave ' + chiave + ' ha un valore array');
+            }
+        }
+
+        m1.forEach(iterateOnMap)
+
+        //cancellazione
+        console.log(m1.delete("name"));
+        console.log(m1);
+
+        //forEach negli array
+
+        const lables = ["html", "css", "javascript"];
+
+        function iterateOverLabels(valore, chiave) {
+            console.log(chiave + ": " + valore);
+        }
+
+        labels.forEach(iterateOverLabels)
+
+
+        for (let i = 1; i < labels.length; i++) {
+            console.log(i + ': ' + labels[i]);
+        }
+
+        console.log(m1 instanceof Map);
+        console.log(m1 instanceof Set);
+
+        getMapInfo(10);
+
+        const m3 = new Map([
+            ["front-end", ["html", "css", "js"]],
+            ["back-end", ["js", "java", "php"]],
+            ["rote", [10]]
+        ])
+
+        m3.set('', '')
+        console.log(m3);
+
+
+    </script>
+</body>
+
+</html>

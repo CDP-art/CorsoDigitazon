@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+
+<body>
+    <script>
+        //Ha un valore univoco e non si può duplicare
+        //Ogni valore si presenta una sola volta all'interno del set
+        //Un raggruppamento di valori
+
+        const s1 = new Set();
+        console.log(s1);
+
+        s1.add(10);
+        s1.add(20);
+        s1.add(30);
+        s1.add(40);
+        s1.add(40);
+        s1.add(40);
+
+        console.log(s1); // In output vedremo una volta solamente 40 perchè non si possono duplicare i valori
+        console.log((s1.has(30)));
+        console.log(s1.size);
+        console.log(s1.values());
+
+        function iterateOverSet(value) {
+            console.log(value);
+        }
+
+        console.log(s1);
+
+        //instanceof ti da la possibilità di verificare se l'operando di sinistra è lo stesso tipo di dato dell'operando di destra e ti restituisce il true o false. 
+
+        const s2 = new Set([30, 40, "ciao"])
+        console.log(s2);
+
+    </script>
+</body>
+
+</html>

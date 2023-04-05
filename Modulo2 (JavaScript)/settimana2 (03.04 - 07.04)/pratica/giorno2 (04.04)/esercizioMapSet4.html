@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 4</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Ex 4
+            realizzare due istanze di Map che rappresentano due studenti che abbiano la seguente struttura:
+            - name, lastname, rates
+            dove name e lastname sono stringhe e rates è un array di 5 numeri
+            assegnare valori a piacere per ogni chiave, es mario rossi 4, 5, 6, 4, 3 e luigi verdi 8, 7, 4, 9, 9
+            creare la funzione bestStudent, che prende in ingresso due mappe che rappresentano uno studente, e restituisce il nome e il cognome dello studente che ha la media voto migliore tra i due.
+            Richiamare questa funzione passando le due mappe create precedentemente
+
+        */
+
+        // creare due mappe differenti
+        //assegnare valori diversi per ogni chiave
+        //creare funzione bestStudent con due mappe in ingresso che rappresentano uno studente
+        //trovare media
+        //richiamare la funzione con le due mappe
+
+        const studente1 = new Map();
+        const studente2 = new Map();
+
+        studente1.set("name", "Gianluigi");
+        studente1.set("lastname", "Bonaparte")
+        studente1.set("rates", [4, 5, 6, 4, 3]);
+
+        studente2.set("name", "Pierpaolo");
+        studente2.set("lastname", "XIII di Borbone")
+        studente2.set("rates", [8, 7, 4, 9, 9]);
+
+        // console.log(studente1);
+        // console.log(studente2);
+
+
+        function bestStudent(g, p) {
+
+
+            let sum1 = 0;
+            let sum2 = 0;
+
+            for (let i = 0; i < studente1.get("rates").length; i++) {
+                sum1 += studente1.get("rates")[i];
+            }
+
+            for (let i = 0; i < studente2.get("rates").length; i++) {
+                sum2 += studente2.get("rates")[i];
+            }
+
+            if ((sum1 / 5) >= (sum2 / 5)) {
+                console.log("La media di " + g.get("name") + " " + g.get("lastname") + " è: " + (sum1 / 5));
+            } else {
+                console.log("La media di " + p.get("name") + " " + g.get("lastname") + " è: " + (sum2 / 5));
+            }
+        }
+
+
+        console.log(bestStudent(studente1, studente2))
+
+    </script>
+</body>
+
+</html>
