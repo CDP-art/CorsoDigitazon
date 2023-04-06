@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //creazione di una mappa vuota
+        const m1 = new Map();
+        m1.set("name", "Claudio")
+        m1.set("lastname", "De Paolis")
+        m1.set("skills", ["html", "css", "javascript"])
+
+        //stampa
+        console.log((m1));
+
+        //recupero 
+        console.log(m1.get("name")); //In questo caso andiamo a recuperare il valore di quella chiave selezionata. Come per un array che andiamo a recuperare l'indice array[10]
+
+        //potrei anche fare una funzione per verificare se effettivamete esiste quella key nella mappa
+        //possiamo immaganizzare in una variabile, per esempio, la chiave che vogliamo cercare
+        let keyToFind = "skills"
+        //ciclo if per verificare se ci torna la chiave cercata o meno
+        if (m1.has(keyToFind)) {
+            console.log(m1.get(keyToFind));
+        } else {
+            console.log("La chiave " + keyToFind + " non esiste nella mappa");
+        }
+
+        //inizilizzazione della mappa
+
+        const m2 = new Map([
+            ["height", "100px"],
+            ["width", "300px"],
+            ["background-color", "red"]
+        ]);
+
+        //nulla toglie che possiamo aggiungere dopo un elemento
+
+        m2.set("border", "1px, solid")
+
+        //Se noi avessimo un div, per esempio, lo possiamo andare a collegare con un document.getElement... e gli si assegna i valori css andando a rimprendere le chiavi delle mappe
+
+
+        //Il forEach accetta una funzione in entrata e non restituisce niente in uscita. Il valore di return è undefined
+        //Serve ad iterare la mappa o il valore che vogliamo.
+        //La funzione in entrata accetta due parametri d'ingresso (value e key).
+        //Quindi, in questo caso, nomeMappa.forEach(nomeFunzione) si andrà ad iterare (a ciclare, a ripetere) quello che è all'interno della funzione per tutti gli elementi della mappa.
+        //Il forEach si aspetta una funzione
+
+        function m2Fn(value, key) {
+            console.log(key);
+            console.log(value);
+            console.log("-------");
+        }
+
+        m2.forEach(m2Fn)
+    </script>
+</body>
+
+</html>

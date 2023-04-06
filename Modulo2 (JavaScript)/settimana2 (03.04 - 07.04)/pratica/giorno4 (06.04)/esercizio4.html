@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 4</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Ex 4
+            creare un array di oggetti, che rappresentano le dimensioni dei lati di un rettangolo, e avranno proprietà base e altezza.
+            Nell'array inserire 5 oggetti con questo template e valori a piacere.
+            Creare una funzione parseRectangles che prende in ingresso un array di oggetti con la struttura descritta e restituisca l'indice del rettangolo con l'area maggiore.
+
+        */
+
+        const rettangoli = [
+            {
+                base: 30,
+                altezza: 10,
+            },
+            {
+                base: 50,
+                altezza: 20,
+            },
+            {
+                base: 70,
+                altezza: 30
+            },
+            {
+                base: 90,
+                altezza: 50
+            },
+            {
+                base: 110,
+                altezza: 70
+            }
+        ];
+
+        // console.log(rettangoli);
+        // console.log(rettangoli.length);
+        // console.log(rettangoli[2]);
+        // console.log(rettangoli[2].base);
+        // console.log(rettangoli[2].altezza);
+        // console.log(rettangoli[2].altezza * rettangoli[2].base);
+        // const i = 3;
+        // console.log(rettangoli[i]);
+
+
+
+        function parseRectangles(array) {
+            if (Array.isArray(array)) {
+                return 1
+            }
+            else {
+                return "Errore! Inserisci un array"
+            }
+        }
+
+        console.log(parseRectangles(rettangoli));
+
+    </script>
+</body>
+
+</html>

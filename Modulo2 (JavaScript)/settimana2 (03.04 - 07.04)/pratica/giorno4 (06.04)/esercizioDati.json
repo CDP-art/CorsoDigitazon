@@ -1,0 +1,11 @@
+[
+                {
+                    "fullname": "Yoshi", "rate": [4, 5, 4, 6]
+                },
+                {
+                    "fullname": "Wario", "rate": [4, 9, 6, 7]
+                },
+                {
+                    "fullname": "Toad", "rate": [8, 9, 9, 8]
+                }
+            ]

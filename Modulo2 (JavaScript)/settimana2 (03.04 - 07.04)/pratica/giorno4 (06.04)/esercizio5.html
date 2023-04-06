@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 5
+    </title>
+</head>
+
+<body>
+    <script>
+        /*
+        Ex 5
+        creare un array di oggetti, che rappresentano il contenuto di un parola, e avranno proprietà text.
+        Es { text: 'ciao' }, { text: 'javascript' }
+        Nell'array inserire 5 oggetti con questo template e valori a piacere.
+        Creare una funzione parseStrings che prende in ingresso un array di oggetti con la struttura descritta e restituisca quante stringhe contengono la lettera 'x'.
+        */
+
+        let words = [
+            { text: "ciao" },
+            { text: "buongiorno" },
+            { text: "buonanotte" },
+            { text: "buona sera" },
+            { text: "saluteme assoreta" }
+        ];
+
+        // console.log(words);
+        // console.log(words.length);
+        // console.log(words[3].text);
+
+        function parseStrings(array) {
+            if (Array.isArray(array)) {
+                // for (let i in words) {
+                //     return words[i]
+                // }
+                return 1
+            } else {
+                return 0
+            }
+        }
+
+        console.log(parseStrings(words));
+
+    </script>
+</body>
+
+</html>

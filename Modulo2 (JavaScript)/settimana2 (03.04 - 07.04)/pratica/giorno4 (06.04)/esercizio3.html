@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 3
+    </title>
+</head>
+
+<body>
+    <script>
+        // Ex 3
+        // creare, a piacere, due letterali oggetto, che descriveranno rispettivamente:
+        // - uno studente (avrà nome, cognome, età, voti, un metodo per calcolare e stampare la sua media voti, un metodo per
+        // stabilire se è maggiorenne o meno)
+        // - un'automobile (avrà modello, marca, prezzo e tipoMotore. tipoMotore a sua volta avrà cilindrata, tipo (benzina, diesel
+        // o elettrico) e cv. L'automobile avrà un metodo printInfo che stampa in modo correttamente formattato e leggibile le sue
+        // feature
+        // richiamare i metodi dei due oggetti per stampare in output i risultati
+
+        let studente1 = {
+            nome: 'Selima',
+            cognome: 'Bascherini',
+            età: 23,
+            voti: [6, 7, 8, 9, 8],
+            media: function () {
+                let sum = 0
+                for (let i = 0; i < this.voti.length; i++) {
+                    sum += this.voti[i]
+                }
+                return `La media dei voti di ${this.nome} è: ` + sum / this.voti.length
+            },
+            maggiorenne: function () {
+                if (this.età >= 18) {
+                    return this.nome + " è maggiorenne"
+                }
+                return false
+            }
+        };
+
+        console.log(studente1.media())
+        console.log(studente1.maggiorenne())
+
+        let automobile1 = {
+            modello: 'Grande Punto',
+            marca: 'Fiat',
+            prezzo: 10000,
+            tipoMotore: {
+                cilindrata: 1400,
+                tipo: 'turbo-benzina',
+                cv: 120
+            },
+
+            printInfo: function () {
+                // console.log("Questa auto è una " + this.marca + " " + this.modello + ", " + this.tipoMotore.cilindrata + " cc, " + this.tipoMotore.tipo + " da " + this.tipoMotore.cv + " cv");
+
+                console.log(`Questa auto è una ${this.marca} ${this.modello}, ${this.tipoMotore.tipo}, ${this.tipoMotore.cilindrata} cc con ${this.tipoMotore.cv} cv`);
+            }
+
+
+        };
+
+        automobile1.printInfo()
+    </script>
+</body>
+
+</html>

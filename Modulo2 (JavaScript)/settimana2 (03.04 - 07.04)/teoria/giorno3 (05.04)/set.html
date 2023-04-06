@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Set
+        const s1 = new Set();
+        s1.add(10);
+        s1.add(20);
+        s1.add(30);
+        s1.add(40);
+
+        console.log(s1);
+
+        s1.forEach(function (v) {
+            console.log(v);
+        });
+
+        const iterateOvers1 = function (v) {
+            console.log(v + 10);
+            console.log("---------");
+        };
+        s1.forEach(iterateOvers1)
+
+
+    </script>
+</body>
+
+</html>

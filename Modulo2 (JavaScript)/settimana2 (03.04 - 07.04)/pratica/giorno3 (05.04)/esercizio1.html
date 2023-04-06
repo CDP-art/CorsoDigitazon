@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Ex 1
+            creare la funzione diffArray che prende in ingresso due array.
+            Gli array dovranno contenere da 3 a 8 numeri.
+            All'interno della funzione trovare il numero più grande del primo array e il numero più piccolo del secondo array.
+            La funzione restituisce la differenza tra il primo numero e il secondo. 
+            Stampare il risultato in output.
+        */
+
+        //Creare una funzione diffArray che prende in ingresso due array
+        //Gli array devono contenere da 3 a 8 numeri
+        //fare un ciclo for per trovare il numero più grande del primo array
+        //fare il ciclo for per trovare il numero più piccolo del secondo array
+        //restituire la differenza fra il primo numero e il secondo numero
+        //stampare il risultato in output
+
+        let altezza = [100, 130, 150, 170, 180]
+        // console.log(altezza);
+        // console.log(altezza.length);
+        // console.log(altezza);
+        let eta = [7, 10, 15, 18, 20]
+
+        function diffArray(array1, array2) {
+            let max = array1[0]
+            for (let i = 1; i < array1.length; i++) {
+                // console.log(array1[i]);
+                if (array1[i] > max) {
+                    max = array1[i]
+                }
+            }
+
+            console.log(max);
+
+            let min = array2[0]
+            for (let i = 1; i < array2.length; i++) {
+                // console.log(array1[i]);
+                if (min >= array2[i]) {
+                    min = array2[i]
+                }
+            }
+            console.log(min);
+
+            return max - min
+        }
+
+
+
+        console.log(diffArray(altezza, eta));
+
+
+    </script>
+</body>
+
+</html>

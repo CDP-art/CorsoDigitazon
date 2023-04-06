@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Ex 1
+            Dato il seguente JSON:
+            [
+                {
+                    "fullname": "Yoshi", "rate": [4, 5, 4, 6]
+                },
+                {
+                    "fullname": "Wario", "rate": [4, 9, 6, 7]
+                },
+                {
+                    "fullname": "Toad", "rate": [8, 9, 9, 8]
+                }
+            ]
+            salvarlo in un template string, parsarlo con l'apposita strategia e stabilire algoritmicamente chi è lo studente migliore e chi è il peggiore.
+        */
+
+        //creare stringa con dati json
+        //fare media array
+        //contatore per ogni array che fa la media
+        //stampare media più alta
+
+        const jsonString = `
+
+        [
+                {
+                    "fullname": "Yoshi", 
+                    "rate": [4, 5, 4, 6]
+                },
+                {
+                    "fullname": "Wario", 
+                    "rate": [4, 9, 6, 7]
+                },
+                {
+                    "fullname": "Toad", 
+                    "rate": [8, 9, 9, 8]
+                }
+            ]`
+            ;
+
+        // const jsonObj = JSON.parse(jsonString);
+
+        // let sum1 = 0;
+        // let sum2 = 0;
+        // let sum3 = 0;
+
+        // for (let i = 0; i < jsonObj[0].rate.length; i++) {
+        //     sum1 = sum1 + jsonObj[0].rate[i]
+        // }
+
+        // for (let i = 0; i < jsonObj[1].rate.length; i++) {
+        //     sum2 = sum2 + jsonObj[1].rate[i]
+        // }
+
+        // for (let i = 0; i < jsonObj[2].rate.length; i++) {
+        //     sum3 = sum3 + jsonObj[2].rate[i]
+        // }
+
+        // let media1 = sum1 / jsonObj[0].rate.length;
+        // let media2 = sum2 / jsonObj[1].rate.length;
+        // let media3 = sum3 / jsonObj[2].rate.length;
+
+        // let migliore = 0
+        // let peggiore = 0
+
+        // if (media1 > media2 && media1 > media3) {
+        //     media1 = migliore
+        // } else if (media2 > media1 && media2 > media3) {
+        //     media2 = migliore
+        // } else if (media3 > media2 && media3 > media1) {
+        //     media3 = migliore
+        // }
+
+        // if (media1 < media2 && media1 < media3) {
+        //     media1 = peggiore
+        // } else if (media2 < media1 && media2 < media3) {
+        //     media2 = peggiore
+        // } else if (media3 < media2 && media3 < media1) {
+        //     media3 = peggiore
+        // }
+
+
+
+
+        const Students = JSON.parse(jsonString)
+
+        function mediumValue(array) {
+            if (Array.isArray(array)) {
+                let sum = 0
+                for (let i = 0; i < array.length; i++) {
+                    sum += array[i]
+                }
+                console.log(sum / array.length);
+            }
+            return 0
+        }
+
+        function bestStudent(object) {
+            let bestRate = mediumValue(object[0].rate)
+            for (let i = 1; i < object.length; i++)
+                if (mediumValue(object[i].rate) > bestRate)
+                    bestRate = mediumValue(object[i].rate)
+            let bestSts = []
+            for (let i = 0; i < object.length; i++)
+                if (mediumValue(object[i].rate) == bestRate)
+                    bestSts.push(object[i].fullname)
+            return bestSts
+        }
+
+        function worstStudent(object) {
+            let worstRate = mediumValue(object[0].rate)
+            for (let i = 1; i < object.length; i++)
+                if (mediumValue(object[i].rate) < worstRate)
+                    worstRate = mediumValue(object[i].rate)
+            let worstSts = []
+            for (let i = 0; i < object.length; i++)
+                if (mediumValue(object[i].rate) == worstRate)
+                    worstSts.push(object[i].fullname)
+            return worstSts
+        }
+
+        console.log('i migliori studenti sono: ' + bestStudent(Students))
+        console.log('i peggiori studenti sono: ' + worstStudent(Students))
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oggetti Letterali</title>
+</head>
+
+<body>
+    <script>
+        // I letterali (va a definire il valore all'interno del linguaggio di programmazione) oggetti sono la stessa cosa delle mappe, ma con delle differenze. Ci permettono di salvare i dati al loro interno sempre con proprietà e valore. La proprietà può essere una keyword e il valore in stringa, array ecc.
+
+
+        const oggetto = {
+            //proprietà dell'oggetto
+            name: "Claudio",
+            lastname: "De Paolis",
+            skills: ["html", "css", "javascript"],
+            age: 28,
+
+            //metodi
+            greet: function () {
+                console.log("ciao, sono " + this.name + this.lastname); //Il this serve per specificare che vuoi prendere la proprietà interessata all'interno dell'oggetto corrente.
+            },
+
+            //oggetti
+            colors: {
+                first: "blue",
+                second: "red"
+            }
+        };
+
+        //stampa
+        console.log(oggetto);
+        console.log(oggetto.name);
+        console.log(oggetto.greet);
+        console.log(oggetto.colors.first);
+
+
+        const p1 = {
+            name: "Mario",
+            lastname: "Rossi",
+            printFullName: function () {
+                console.log("ciao, sono " + this.name + this.lastname);
+            }
+        };
+
+        const p2 = {
+            name: "Mario",
+            lastname: "Rossi",
+            printFullName: function () {
+                console.log("ciao, sono " + this.name + this.lastname);
+            }
+        };
+
+            //I file JSON (javascript object notation) è un agglomerato di dati. Sono oggetti, o array con dentro oggetti, che hanno dei valori. I dati all'interno del JSON non possiamo prenderli e leggerli all'interno del file JS perchè sono due "linguaggi" differenti e soprattutto JSON è puramente backend. E' uno scambio di dati fra frontend e backend. Se volessimo passare i suoi dati dal backend al frontend lo possiamo fare con JS e c'è un modo per incorporare all'interno di una variabile tutto i dati JSON. Abbiamo JSON.parse che praticamente prende i dati, li legge, li "traduce" e li trasforma in JS. Se volessimo trasformare tutto in stringa, dovremmo andare ad ispezionare tutto il documento per concatenare ogni striga. Allora utilizziamo i backtip, dollaro e graffe `${}
+
+    </script>
+</body>
+
+</html>
