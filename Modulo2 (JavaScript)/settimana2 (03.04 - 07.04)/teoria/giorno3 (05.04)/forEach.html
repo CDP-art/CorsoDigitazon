@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Il forEach accetta una funzione in entrata e non restituisce niente in uscita. Il valore di return è undefined
+        //Serve ad iterare la mappa o il valore che vogliamo.
+        //La funzione in entrata accetta due parametri d'ingresso (value e key).
+        //Quindi, in questo caso, nomeMappa.forEach(nomeFunzione) si andrà ad iterare (a ciclare, a ripetere) quello che è all'interno della funzione per tutti gli elementi della mappa.
+        //Il forEach si aspetta una funzione
+
+        let array = [1, 2, 3, 4, 5];
+
+        function iterazione(valore, indice) {
+            console.log(`Questo è la posizione ${indice} che rappresenta il valore ${valore}`);
+
+        }
+
+        array.forEach(iterazione)
+        console.log("-------------------------");
+
+
+        let map = new Map();
+
+        map.set("nome", "Claudio")
+        map.set("nome2", "Ciccio")
+        map.set("nome3", "Gianluca")
+        map.set("nome4", "Pierpaolo")
+
+        map.forEach(iterazione)
+        console.log("-------------------------");
+
+        let set = new Set();
+        set.add(10)
+        set.add(20)
+        set.add(30)
+        set.add(40)
+        set.add(40)
+        set.add(40)
+
+        set.forEach(iterazione)
+
+    </script>
+</body>
+
+</html>
