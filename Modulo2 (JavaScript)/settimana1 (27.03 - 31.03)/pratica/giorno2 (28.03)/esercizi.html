@@ -33,28 +33,45 @@
 
         console.log(lunghezza);
 
+        console.log("-------------");
+
         // ex 2
         // crea una variabile stringa con un valore a piacere e stampa i suoi caratteri invertiti separati da -, su un'unica riga
         // es mela -> a-l-e-m
 
         let gioco = "dragonball"
 
-        console.log(gioco.length);
-
         let space = "_"
 
-        console.log(
-            gioco.charAt(9) + space +
-            gioco.charAt(8) + space +
-            gioco.charAt(7) + space +
-            gioco.charAt(6) + space +
-            gioco.charAt(5) + space +
-            gioco.charAt(4) + space +
-            gioco.charAt(3) + space +
-            gioco.charAt(2) + space +
-            gioco.charAt(1) + space +
-            gioco.charAt(0)
-        );
+        // console.log(
+        //     gioco.charAt(9) + space +
+        //     gioco.charAt(8) + space +
+        //     gioco.charAt(7) + space +
+        //     gioco.charAt(6) + space +
+        //     gioco.charAt(5) + space +
+        //     gioco.charAt(4) + space +
+        //     gioco.charAt(3) + space +
+        //     gioco.charAt(2) + space +
+        //     gioco.charAt(1) + space +
+        //     gioco.charAt(0)
+        // );
+
+        function inverse(stringa) {
+            if (typeof stringa == "string") {
+                let a = []
+                let caratteri
+                for (let i = stringa.length; i >= 0; i--) {
+                    console.log(stringa[i]);
+                }
+            } else return "Inserisci una stringa"
+        };
+
+        // console.log(inverse(gioco));
+        inverse(gioco);
+
+
+        console.log("-------------");
+
 
         // ex 3
         // crea due variabili x e y con valori a piacere.
@@ -74,6 +91,7 @@
             console.log("blue");
         }
 
+        console.log("-------------");
 
         // ex 4
         // date due variabili con valori 'kiwi' e 'banana', stampa in output

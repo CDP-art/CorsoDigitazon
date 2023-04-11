@@ -58,18 +58,32 @@
         let name = "claudio";
         console.log(name.length)
 
-        let space = "_"
+        let space = "------------"
 
-        console.log(
-            name.charAt(7) +
-            name.charAt(6) + space +
-            name.charAt(5) + space +
-            name.charAt(4) + space +
-            name.charAt(3) + space +
-            name.charAt(2) + space +
-            name.charAt(1) + space +
-            name.charAt(0)
-        )
+        // console.log(
+        //     name.charAt(7) +
+        //     name.charAt(6) + space +
+        //     name.charAt(5) + space +
+        //     name.charAt(4) + space +
+        //     name.charAt(3) + space +
+        //     name.charAt(2) + space +
+        //     name.charAt(1) + space +
+        //     name.charAt(0)
+        // )
+
+        function inverse(stringa) {
+            if (typeof stringa == "string") {
+                let a = []
+                let caratteri
+                for (let i = stringa.length; i >= 0; i--) {
+                    console.log(stringa[i]);
+                    console.log(space);
+                }
+            } else return "Inserisci una stringa"
+        };
+
+        // console.log(inverse(gioco));
+        inverse(name);
 
 
 

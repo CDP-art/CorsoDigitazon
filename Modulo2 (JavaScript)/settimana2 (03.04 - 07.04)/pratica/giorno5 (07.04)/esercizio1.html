@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+</head>
+
+<body>
+    <script>
+        /*
+        creare una funzione formatDate che, presi in ingresso un numero, una stringa e un numero, stampi una data formattata.
+        Il primo numero rappresenta l'anno, la stringa il nome del mese e il secondo numero il giorno.
+        es: formatDate(2023, 'maggio', 17)   stampa "17-05-2023"
+        */
+
+        const date = new Date();
+        console.log(date);
+        console.log(date.getDate());
+        console.log(date.getFullYear());
+        console.log(date.getMonth() + 1);
+
+        function formatDate(y, m, d) {
+            if (typeof m == "string") {
+                if (m == "gennaio") {
+                    m = 1;
+                } else if (m == "febbraio") {
+                    m = 2;
+                } else if (m == "marzo") {
+                    m = 3;
+                } else if (m == "aprile") {
+                    m = 4
+                } else if (m == "maggio") {
+                    m = 5;
+                } else if (m == "giugno") {
+                    m = 6;
+                } else if (m == "luglio") {
+                    m = 7;
+                } else if (m == "agosto") {
+                    m = 8;
+                } else if (m == "settembre") {
+                    m = 9;
+                } else if (m == "ottobre") {
+                    m = 10;
+                } else if (m == "novembre") {
+                    m = 11;
+                } else if (m == "dicembre") {
+                    m = 12;
+                }
+
+                return `${d}-${m}-${y}`
+            }
+        }
+
+        console.log(formatDate(2, "luglio", 23));
+
+    </script>
+</body>
+
+</html>

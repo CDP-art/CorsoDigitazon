@@ -24,7 +24,9 @@
             { text: "buongiorno" },
             { text: "buonanotte" },
             { text: "buona sera" },
-            { text: "saluteme assoreta" }
+            { text: "fast x" },
+            { text: "x" },
+            { text: "x" }
         ];
 
         // console.log(words);
@@ -32,17 +34,21 @@
         // console.log(words[3].text);
 
         function parseStrings(array) {
-            if (Array.isArray(array)) {
-                // for (let i in words) {
-                //     return words[i]
-                // }
-                return 1
-            } else {
-                return 0
-            }
+            let x = 0
+            for (let i = 0; i < array.length; i++) {
+                // console.log(array[i]);
+                if (array[i].text == "x") x++
+
+            }; console.log(x);
+
+            //Cosi mi prende solamente se la stringa è strettamente una x
+
         }
 
-        console.log(parseStrings(words));
+        // console.log(parseStrings(words));
+        parseStrings(words);
+
+
 
     </script>
 </body>
