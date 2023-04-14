@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Uno dei lavori del programmatore è cercare di capire come potrebbe interaggire il cliente con la tua applicazione. Quindi dobbiamo prevenire qualsiasi tipo di errore, che potrebbe essere causato dal cliente o dai noi stessi, in modo tale da non bloccare tutta l'applicazione. Per fare questo esiste il try and catch. Praticamente si inserisce nel try l'ipotetico errore che si pensa possa verificarsi e nel catch il messaggio di errore o quello che si vuole fare qual'ora si verifichi l'errore messo in precendenza nel try.
+        */
+
+        let arr = [1, 2, 3]
+        function max(arr) {
+            let max = arr[0]
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i]
+                }
+                return max
+            }
+        }
+        console.log(max([1, 2, 3]))
+
+
+    </script>
+</body>
+
+</html>

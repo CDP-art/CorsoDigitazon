@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni</title>
+</head>
+
+<body>
+    <script>
+        function fn(n) {
+            console.log(`ciao ${n}`);
+        }
+
+        for (let i = 1; i <= 10; i++) fn(i);
+
+        console.log("----------------");
+
+        function sum(x, y) { return x + y }
+
+        function printN(n) { console.log(`Il risultato è ${n}`); }
+
+        //assegnamento
+
+        let result = sum(5, 6);
+
+        //espressione matematica o di concatenazione
+
+        console.log("il risultato è: " + (sum(10, 4) + 10));
+
+        //passaggio di parametri
+
+        printN(sum(10, 4))
+
+        //controllo condizionale
+
+        if (sum(10, 4) > 10) console.log("here");
+
+        console.log("----------------");
+
+        const a = 10;
+        const exp = function (n, m) {
+            return (n * m) * 2;
+        };
+
+        const r1 = exp(10, 4);
+        console.log(r1);
+
+        console.log("----------------");
+
+        //funzione dentro ad una funzione
+
+        function fn2() {
+            return function (param) {
+                return "hai chiamato una funzione con dentro una funzione con parametro: " + param;
+            }
+        }
+
+        console.log(fn2()("ciao").toUpperCase())
+
+        console.log("----------------");
+
+        function sum2(a, b) { return a + b }
+        function diff(a, b) { return a - b }
+        function multiply(a, b) { return a * b }
+
+        function ope(fn1, fn2, values) {
+            return multiply(fn1(values[0], values[1]), fn2(values[0], values[1]))
+        }
+
+        const result2 = ope(sum, diff, [10, 4])
+        console.log(result2);
+        console.log("----------------");
+
+        for (let i = 1; i <= ope(sum, diff, [10, 4]) / 2; i++) console.log(i);
+
+
+    </script>
+</body>
+
+</html>

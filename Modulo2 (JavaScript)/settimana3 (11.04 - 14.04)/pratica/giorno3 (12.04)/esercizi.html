@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (let i = 0; i < 10; i = i + 2) {
+            console.log(i--);
+        }
+
+        console.log("----------");
+        // IN QUESTO CASO ENTRIAMO NELL'IF PERCHE' UNA DELLE DUE CONDIZIONE E' VERA. LA CONDIZIONE VERA DELL'OR E' CHE ALMENO UNA DELLE DUE (SX O DX) RITORNA TRUE. SE ANALIZZIAMO LET=A DA COME RISULTATO UNDEFINED, PERCHE' ESISTE COME VARIABILE, MA NON E' DICHIARATA. UNDEFINED E' FALSE. SE NOI AD A AGGIUNGIAMO ! SIGNIFICA CHE GLI CAMBIAMO IL FALORE E QUINDI DA FALSE LO PASSAIMO A FALSE.
+        let a
+
+        if (!a || "hi") {
+            console.log(1);
+        } else {
+            console.log(2);
+        }
+        console.log("----------");
+
+        //IN QUESTO CASO E' VERO CHE CAMBIAMO IL VALORE DA TRUE A FALSE, MA ABBIAMO LA PARTE DI DESTRA CHE COMUNQUE RIMANE TRUE E QUINDI RITORNA TRUE ED ENTRIAMO NELL'IF.
+        let b = "b"
+
+        if (!b || "hi") {
+            console.log(1);
+        } else {
+            console.log(2);
+        }
+        console.log("----------");
+
+        // cosa stampa?
+        for (let i = 0; ; i++) {
+            console.log(i)
+            if (i > 10) break
+        }
+
+        //Non avendo una condizione per rimanere dentro al ciclo, il ciclo continua ad aumentare i fino a che non si verichi che la condizione nell'if sia vera. Quindi entra nell'if ed esegue il break (interruzione del ciclo più vicino). In soluzione avremo tutti i numeri stampati da 1 a 11 (visto che 11 è maggiore di 10 e si interrompe)
+        console.log("----------");
+        // cosa stampa?
+        let n = 0
+        if ((n && true) || false) {
+            console.log('Say. My. Name.')
+        } else {
+            console.log("... you're Heisenberg...")
+        }
+        console.log("----------");
+        // cosa stampa?
+        let i
+        for (i = 0; i < 1; i++) {
+            console.log(i)
+        }
+        console.log(i);
+        // In questo ciclo viene stampato sia 0 che 1 perchè la variabile let è stata dichiarata esterna dal for e di conseguenza viene letta a livello globale
+
+        console.log("----------");
+        // gotta love Functional Programming
+        // su questo sono uscito un po' dal tracciato per dare possibilita' anche a quelli che gia' 
+        // programmavano, o che vogliono una sfida leggermente piu' avanzata, per cimentarsi
+        function T() { return true }
+        function F() { return false }
+        function and(sx, dx) {
+            return function () { return sx() && dx() }
+        }
+        function or(sx, dx) {
+            return function () { return sx() || dx() }
+        }
+        console.log(and(or(F, T), T)())
+        console.log("----------");
+
+
+    </script>
+</body>
+
+</html>

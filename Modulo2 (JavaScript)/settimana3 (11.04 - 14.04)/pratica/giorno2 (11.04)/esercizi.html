@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 3 - 1 or 2?
+        function wat(a) {
+            if (!a) {
+                return 1
+            }
+
+            return 2
+        }
+        wat()
+        console.log("---------------");
+
+        // 4 - truthy and falsey
+        let a
+        if (!a || 'hi') {
+            console.log(1)
+        } else {
+            console.log(2)
+        }
+
+        console.log("---------------");
+
+        // 5 - what will be printed?
+        function plus(n, m) {
+            return n + m
+        }
+        console.log(plus("a", 1))
+        console.log("---------------");
+
+        // 6 - functional fill in the blanks
+        //         function calc(op, n, m) {
+        //             return ?
+        // }
+        //         console.log(calc(function (a, b) { return a + b }, 1, 2) // should return 3
+        //         console.log(calc(function (a, b) { return a - b }, 4, 3) // should return 1
+        //         console.log("---------------");
+
+        //         // 7 - what will be printed?
+        //             function x(n) {
+        //                 return function () { return ++n }
+        //             }
+        //             let y = x(0)
+        //             console.log(y()) // ?
+        //             console.log(y()) // ?
+        //             console.log(y()) // ?
+
+        console.log("---------------");
+
+        // 8 - what will be printed?
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i--)
+        // }
+
+        console.log("---------------");
+
+        // 9 - what will be printed?
+        // if (true) {
+        //     let a = 3
+        //     a++
+        // }
+        // console.log(a)
+        // console.log("---------------");
+
+        // 10 - what will be printed?
+        let arr = [1, 2, 3]
+        function max(arr) {
+            let max = arr[0]
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i]
+                }
+                return max
+            }
+        }
+        console.log(max([1, 2, 3]));
+        console.log("---------------");
+
+        let x = 10
+        let y = 20
+
+        if (true) {
+            y = x
+        }
+
+        console.log(++y)
+        console.log("---------------");
+
+
+    </script>
+</body>
+
+</html>
