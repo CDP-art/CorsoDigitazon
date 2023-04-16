@@ -9,7 +9,7 @@
 //else (metto come chiave il carattere attuale e come valore 1)
 //restituire mappa
 
-let word = "franca";
+let word = "";
 
 function fn(stringa) {
   const m = new Map();
@@ -38,18 +38,18 @@ console.log("-------------");
 //se false concateno il risultato con il carettere
 //ritorno risultato
 
-// let word2 = "pallone";
-// console.log(word2);
+let word2 = "pallone";
+console.log(word2);
 
-// function fn2(stringa) {
-//   let result = "";
-//   for (let i = 0; i < stringa.length; i++) {
-//     console.log(stringa[i]);
-//     if (result.indexOf(stringa[i]) - 1) {
-//     } else result + stringa[i];
-//   }
-// }
-// fn2(word2);
+function fn2(stringa) {
+  let result = "";
+  for (let i = 0; i < stringa.length; i++) {
+    console.log(stringa[i]);
+    if (result.indexOf(stringa[i]) - 1) {
+    } else result + stringa[i];
+  }
+}
+fn2(word2);
 // console.log(fn2(word2));
 
 // Scrivere una funzione che data una stringa in ingresso, rimuove tutti i dati duplicati
