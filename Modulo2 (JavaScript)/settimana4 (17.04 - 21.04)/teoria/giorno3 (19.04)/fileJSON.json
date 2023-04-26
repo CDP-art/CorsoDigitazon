@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Mario",
+        "lastname": "Rossi",
+        "rate": [
+            7,
+            4,
+            5
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Luigi",
+        "lastname": "Verdi",
+        "rate": [
+            7,
+            8,
+            6,
+            9
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Peach",
+        "lastname": "Peach",
+        "rate": [
+            7,
+            4,
+            5
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Yoshi",
+        "lastname": "Verdi",
+        "rate": [
+            7,
+            4,
+            7,
+            7
+        ]
+    }
+]

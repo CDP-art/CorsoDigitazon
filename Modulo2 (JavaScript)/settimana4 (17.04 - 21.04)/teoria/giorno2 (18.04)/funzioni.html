@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fn1(x, y) {
+            if (typeof x != 'number' || typeof y != 'number') {
+                return;
+            }
+
+            return x + y
+        }
+
+        const r1 = fn1(10, 4)
+        console.log(r1)
+        console.log(fn1('ciao', ' js'));
+
+        console.log("---------------------------");
+
+        function fn2(a /* array */) {
+            if (!Array.isArray(a)) {
+                console.log('Errore! Il dato non è un array')
+                return
+            }
+
+            for (let i = 0; i < a.length; i++) {
+                console.log('iterazione ' + i + ': ' + a[i])
+            }
+        }
+
+        fn2(10)
+        fn2([10, 20, 30])
+        fn2(['ciao', 'js', 10, 30])
+
+        console.log("---------------------------");
+
+        function fn3() {
+            return [10, 20, 30, 40]
+        }
+
+        const a1 = fn3()
+        console.log(a1[1]);
+
+        console.log("---------------------------");
+
+        let id = 1;
+
+        function makePerson(n, ls, age) {
+            return {
+                name: n,
+                lastname: ls,
+                age: age,
+                id: id++,
+            };
+        }
+
+        const people = [
+            makePerson("mario", "rossi", 18),
+            makePerson("luigi", "verdi", 19),
+            makePerson("claudio", "de paolis", 20),
+        ];
+
+        people.forEach(function (el) {
+            console.log(
+                `Numero di matricola: ${el.id}, Nome: ${el.name}, Cognome: ${el.lastname}, età: ${el.age}`
+            );
+        });
+
+        function getPersonById(_id, arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i].id == _id) return arr[i];
+            }
+        }
+
+        console.log(getPersonById(1, people));
+
+        console.log("---------------------------");
+
+        /*
+        creare una funzione getMaxMinAsArray che prende in ingresso un array di 6 numeri e restiuisce un array di 2 numeri: il primo, che rappresenta il numero più piccolo del primo array, e il secondo che rappresenta il numero più grande del primo array.
+        Richiamare la funzione getMaxMinAsArray con un array di 6 numeri a piacere, salvare l'array restituito dalla funzione e stampare il numero più grande e più piccolo con un apposito messaggio
+    */
+
+        //creare un array di numeri
+        //creare una funzione che prende in ingresso un array
+        //creare una variabile per valore massimo
+        //creare una variabile per valore minimo
+        //creare un array vuoto dove memorizzare i due valori
+        //creare un ciclo for che iteri nell'array d'ingresso per prendere i valori degli indici
+        //ciclo condizionale if
+        //se indice è maggiore di max, allora max = indice
+        // se indice è minore di min, allora min = indice
+        //creare nuovo array dove inserire il valore max e min
+
+
+
+        let array = [1, 8, 3, 14, 75];
+
+        function getMaxMinAsArray(a) {
+            let max = a[0];
+            let min = a[0];
+            for (let i = 1; i < a.length; i++) {
+
+                if (a[i] > max) {
+                    max = a[i];
+                }
+
+                if (a[i] < min) {
+                    a[i] = min
+                }
+            }
+
+            return [min, max]
+
+        }
+
+        console.log(`Il numero  minore dell'array è ${getMaxMinAsArray(array)[0]} e il numero maggiore è ${getMaxMinAsArray(array)[1]}`);
+
+
+
+    </script>
+</body>
+
+</html>

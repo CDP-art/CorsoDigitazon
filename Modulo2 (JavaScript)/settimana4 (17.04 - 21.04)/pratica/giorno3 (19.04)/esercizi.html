@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+            Scrivere una funzione che dato in ingresso un numero, ritorni il fattoriale di quel numero.
+            Fattoriale = numero * nuemri precendenti di lui
+        */
+
+        //creare una funzione che prende in ingresso un numero
+        //creare una variabile che memorizzi il risultato
+        //fare un ciclo for che parte da 0 e arrivi fino a i < n
+        //creare una variabile che memorizzi la moltiplicazione e che parti da 1. (qualsiasi n * 0, da sempre 0)
+        //moltiplicare n * i suoi numeri precedenti
+        //stampare operazione
+
+        let fattoriale = (n) => {
+            let risult = 0
+            let mul = 1
+            for (let i = 1; i < n; i++) {
+                mul = mul * i;
+                risult = mul * n
+            }
+            return risult;
+        };
+
+        console.log(fattoriale(6));
+
+        console.log("------------------------");
+
+        let n = 5
+        let str = "5"
+
+        console.log(n === str);
+
+        console.log("------------------------");
+
+        let a = 5
+        function test(a) {
+            a = 6
+        }
+        console.log(a)
+        test(a)
+        console.log(a)
+        test(7)
+        console.log(a)
+
+        console.log("------------------------");
+
+        // create two pointers, LEFT and RIGHT
+        // given LEN as length of the string
+        // given MIDDLE as LEN / 2
+        // if the string is even
+        //   LEFT starts at MIDDLE - 1, RIGHT starts at MIDDLE
+        // else
+        //   LEFT and RIGHT start at Math.floor(MIDDLE)
+        // while LEFT >= 0 and RIGHT < LEN
+        //   given LINE as the accumulation of 2 * LEFT spaces
+        //   accumulate in LINE the characters in the string between LEFT and RIGHT
+        //   LEFT--
+        //   RIGHT++
+        //   print LINE
+        //   LINE = ''
+    </script>
+</body>
+
+</html>

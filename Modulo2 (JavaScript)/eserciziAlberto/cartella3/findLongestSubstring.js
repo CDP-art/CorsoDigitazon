@@ -9,7 +9,7 @@
 
 function findLongestSubstring(string) {
   let set = new Set(string);
-  return set;
+  
 }
 
 console.log(findLongestSubstring("aabababacccbabca"));
