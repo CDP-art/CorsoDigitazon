@@ -14,8 +14,7 @@
 function union(arr1, arr2) {
   let array = [];
   for (let i = 0; i < arr1.length && i < arr2.length; i++) {
-    array.push(arr1[i]);
-    array.push(arr2[i]);
+    array = [...arr1, ...arr2]
   }
   return array;
 }
