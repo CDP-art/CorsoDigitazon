@@ -11,19 +11,20 @@
 //incrementare la variabile creata dall'indice 0 dell'array fino al secondo indice -1
 //stampare in un array la varibile
 
- // ====> [2,3,4,5,6,7,8,9]
+// ====> [2,3,4,5,6,7,8,9]
 
- 
+
 
 let between = (a, b) => {
     let array = []
-        for(let i = a +1; i < b; i++){
-            // console.log(i);
-            array.push(i);
+    for (let i = a + 1; i < b; i++) {
+        array.push(i);
     }
-        return array
-    }
-    
+    return array
+}
+
 
 // console.log(mid(array));
 console.log(between(-1, 15))
+
+//FATTO

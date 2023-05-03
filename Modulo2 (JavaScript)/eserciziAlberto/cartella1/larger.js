@@ -8,3 +8,5 @@ function larger(a, b) {
 }
 
 console.log(larger(5, 4));
+
+//FATTO

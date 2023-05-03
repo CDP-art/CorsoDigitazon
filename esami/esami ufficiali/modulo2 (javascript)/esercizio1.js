@@ -67,7 +67,7 @@ let string = `
 `
 
 let piuCostoso = str => {
-    let arrayS = str.split("\n");
+    let arrayS = str.split("\n"); //\n prende ogni singola riga della stringa
     let prezzoMag = 0
     let prezzoMin = 0
     let repartoMag = ""
@@ -86,11 +86,3 @@ let piuCostoso = str => {
 piuCostoso(string)
 
 //Ho avuto poco tempo per fare questo esercizio. Probabilmente ero in grado di farlo, ma ho avuto un'ora e per è stato poco
-
-
-
-
-
-
-
-

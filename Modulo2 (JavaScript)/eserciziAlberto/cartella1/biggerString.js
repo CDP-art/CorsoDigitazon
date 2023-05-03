@@ -12,3 +12,5 @@ function biggerString(a, b) {
 }
 
 console.log(biggerString("francesca", "francesca"));
+
+//FATTO
