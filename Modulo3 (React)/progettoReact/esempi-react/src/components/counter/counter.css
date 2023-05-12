@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container span {
+    width: 50px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsContainer {
+    display: flex;
+}
+
+.buttonsContainer button {
+    width: 30px;
+    margin: 10px;
+}

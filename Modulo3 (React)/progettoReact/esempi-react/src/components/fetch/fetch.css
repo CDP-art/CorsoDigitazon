@@ -1,0 +1,29 @@
+#fetchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#imagesList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#article {
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+    border: 1px solid green;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
