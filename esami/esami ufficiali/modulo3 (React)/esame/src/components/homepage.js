@@ -74,7 +74,7 @@ export default function Homepage() {
 
     return (
         <div className="container">
-            <h1>Continua ad aquistare!</h1>
+            <h1>Continua ad acquistare!</h1>
             <div className="body">
                 <Card />
                 <Cart />

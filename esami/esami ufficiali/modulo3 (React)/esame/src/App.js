@@ -2,7 +2,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar';
 import Homepage from './components/homepage';
-import Smartphone from './components/smartphone';
+import Smartphone from './pages/smartphone';
+
 
 
 function App() {
@@ -14,7 +15,6 @@ function App() {
             <Route index element={<Homepage />}></Route>
             <Route path="/smartphones" element={<Smartphone />}></Route>
           </Route>
-
         </Routes>
       </BrowserRouter>
     </div>

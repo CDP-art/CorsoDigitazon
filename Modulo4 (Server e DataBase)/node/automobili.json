@@ -1,0 +1,164 @@
+[
+    {
+        "marca": "Fiat",
+        "modello": "Topolino",
+        "anno": 1936,
+        "CV": 13
+    },
+    {
+        "marca": "Alfa Romeo",
+        "modello": "Giulia Sprint GT",
+        "anno": 1963,
+        "CV": 106
+    },
+    {
+        "marca": "Lamborghini",
+        "modello": "Miura",
+        "anno": 1966,
+        "CV": 350
+    },
+    {
+        "marca": "Ferrari",
+        "modello": "Dino 246 GT",
+        "anno": 1969,
+        "CV": 195
+    },
+    {
+        "marca": "Maserati",
+        "modello": "Ghibli SS",
+        "anno": 1970,
+        "CV": 335
+    },
+    {
+        "marca": "Lancia",
+        "modello": "Stratos",
+        "anno": 1972,
+        "CV": 190
+    },
+    {
+        "marca": "Abarth",
+        "modello": "500",
+        "anno": 1957,
+        "CV": 17
+    },
+    {
+        "marca": "Fiat",
+        "modello": "Uno",
+        "anno": 1983,
+        "CV": 45
+    },
+    {
+        "marca": "Lamborghini",
+        "modello": "Countach",
+        "anno": 1974,
+        "CV": 375
+    },
+    {
+        "marca": "Ferrari",
+        "modello": "Testarossa",
+        "anno": 1984,
+        "CV": 390
+    },
+    {
+        "marca": "Alfa Romeo",
+        "modello": "Spider (Duetto)",
+        "anno": 1966,
+        "CV": 109
+    },
+    {
+        "marca": "Maserati",
+        "modello": "Biturbo",
+        "anno": 1981,
+        "CV": 180
+    },
+    {
+        "marca": "Lancia",
+        "modello": "Delta Integrale",
+        "anno": 1987,
+        "CV": 200
+    },
+    {
+        "marca": "Fiat",
+        "modello": "Punto",
+        "anno": 1993,
+        "CV": 85
+    },
+    {
+        "marca": "Lamborghini",
+        "modello": "Diablo",
+        "anno": 1990,
+        "CV": 492
+    },
+    {
+        "marca": "Ferrari",
+        "modello": "F40",
+        "anno": 1987,
+        "CV": 478
+    },
+    {
+        "marca": "Alfa Romeo",
+        "modello": "156",
+        "anno": 1997,
+        "CV": 155
+    },
+    {
+        "marca": "Maserati",
+        "modello": "Quattroporte",
+        "anno": 2003,
+        "CV": 400
+    },
+    {
+        "marca": "Lancia",
+        "modello": "Thesis",
+        "anno": 2002,
+        "CV": 170
+    },
+    {
+        "marca": "Fiat",
+        "modello": "500",
+        "anno": 2007,
+        "CV": 69
+    },
+    {
+        "marca": "Lamborghini",
+        "modello": "Aventador",
+        "anno": 2011,
+        "CV": 700
+    },
+    {
+        "marca": "Fiat",
+        "modello": "124 Spider",
+        "anno": 2016,
+        "CV": 140
+    },
+    {
+        "marca": "Alfa Romeo",
+        "modello": "Giulietta",
+        "anno": 2010,
+        "CV": 170
+    },
+    {
+        "marca": "Maserati",
+        "modello": "Levante",
+        "anno": 2016,
+        "CV": 275
+    },
+    {
+        "marca": "Lancia",
+        "modello": "Ypsilon",
+        "anno": 2011,
+        "CV": 69
+    },
+    {
+        "marca": "Ferrari",
+        "modello": "488 GTB",
+        "anno": 2015,
+        "CV": 670
+    },
+    {
+        "marca": "Abarth",
+        "modello": "595",
+        "anno": 2012,
+        "CV": 160
+    }
+]
