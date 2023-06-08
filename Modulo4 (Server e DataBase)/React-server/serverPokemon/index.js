@@ -10,8 +10,10 @@ import {
 import { pokemonByType } from "./routesTypePokemon.mjs"
 const app = express()
 import bodyParser from 'body-parser'
+import cors from "cors"
+app.use(cors())
 app.use(bodyParser.json())
-const port = 3000
+const port = 8000
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
