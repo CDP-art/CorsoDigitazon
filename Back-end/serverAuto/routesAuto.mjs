@@ -1,4 +1,4 @@
-import automobili from "./db/automobili.json" assert {type: "json"}
+import automobili from "./db/automobili.json"
 
 
 export const getMarcaAuto = (req, res) => {
@@ -16,3 +16,4 @@ export const getMarcaAuto = (req, res) => {
         })
     }
 }
+

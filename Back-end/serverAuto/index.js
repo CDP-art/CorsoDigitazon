@@ -1,4 +1,7 @@
 import express from 'express'
+import axios from 'axios'
+import bodyParser from 'body-parser'
+app.use(bodyParser.json())
 import automobili from "./db/automobili.json" assert{type: "json"}
 import { getMarcaAuto } from './routesAuto.mjs'
 const app = express()
