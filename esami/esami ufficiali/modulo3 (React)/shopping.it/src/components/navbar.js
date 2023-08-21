@@ -44,7 +44,7 @@ export default function Navbar() {
                     {categories.map((category, i) => (
                         <div key={i}>
                             <Link to={`${category}`} style={{ textDecoration: "none", color: "orange" }}>
-                                <p >{category}</p></Link>
+                                <p>{category}</p></Link>
                         </div>
                     ))}
                 </div>
