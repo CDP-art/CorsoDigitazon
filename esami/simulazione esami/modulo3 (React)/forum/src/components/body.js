@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import "../css/App.css"
+import axios from "axios";
 
 export default function Body({ post }) {
 
@@ -10,9 +12,8 @@ export default function Body({ post }) {
     //Asincrona per titolo 
     useEffect(() => {
         async function getTitle() {
-            let res = await fetch(`https://jsonplaceholder.typicode.com/posts/${post}`)
-            let json = await res.json()
-            setTitle(json)
+            let res = await axios.get(`https://jsonplaceholder.typicode.com/posts/${post}`)
+            setTitle(res.data)
         }
         getTitle()
     }, [post])
@@ -21,9 +22,8 @@ export default function Body({ post }) {
     //Asincrona per commento 
     useEffect(() => {
         async function getComments() {
-            let res = await fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
-            let json = await res.json()
-            setComments(json)
+            let res = await axios.get(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
+            setComments(res.data)
 
         }
         getComments()

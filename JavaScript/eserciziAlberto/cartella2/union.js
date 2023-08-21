@@ -20,3 +20,6 @@ function union(arr1, arr2) {
 }
 
 console.log(union([1, 2, 3], [4, 5, 6]));
+
+
+//FATTO

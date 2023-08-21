@@ -1,7 +1,8 @@
 import React from "react";
+import axios from "axios";
 import { Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "../App.css";
+import "../css/App.css";
 
 export default function Navbar() {
 
@@ -10,9 +11,8 @@ export default function Navbar() {
     useEffect(() => {
         //effettuo la chiamata al server esterno per prendere le categorie
         async function getCategories() {
-            const res = await fetch("https://dummyjson.com/products/categories")
-            const json = await res.json()
-            setCategories(json)
+            const res = await axios.get("https://dummyjson.com/products/categories")
+            setCategories(res.data)
         }
         getCategories()
     }, [])
@@ -42,7 +42,10 @@ export default function Navbar() {
                 </nav>
                 <div className="categories">
                     {categories.map((category, i) => (
-                        <div key={i}><Link to={`${category}`} style={{ textDecoration: "none", color: "orange" }}><p >{category}</p></Link></div>
+                        <div key={i}>
+                            <Link to={`${category}`} style={{ textDecoration: "none", color: "orange" }}>
+                                <p >{category}</p></Link>
+                        </div>
                     ))}
                 </div>
             </div>

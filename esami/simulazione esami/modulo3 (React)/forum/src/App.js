@@ -1,11 +1,11 @@
-import './App.css';
+import "./css/App.css"
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from './components/home';
-import Body from './components/body';
-import Homepage from './components/homepage';
-
+import axios from "axios";
+import Home from "./components/home";
+import Body from "./components/body";
+import Homepage from "./components/homepage";
 
 export default function App() {
 
@@ -14,9 +14,9 @@ export default function App() {
   useEffect(() => {
     //effettuo la chiamata al server esterno per la navbar
     async function getId() {
-      const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-      const json = await res.json()
-      const cutJson = json.slice(0, 3)
+      const res = await axios.get("https://jsonplaceholder.typicode.com/posts")
+      const data = await res.data
+      const cutJson = data.slice(0, 3)
       setPosts(cutJson)
     }
     getId()
@@ -30,9 +30,9 @@ export default function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />}>
-                <Route index element={<Homepage />} />
+                <Route index element={<Homepage />}></Route>
                 {posts.map(post => (
-                  <Route path={`post/${post.id}`} element={<Body post={post.id} />} />
+                  <Route key={post.id} path={`post/${post.id}`} element={<Body post={post.id} />} />
                 ))}
               </Route>
             </Routes>
@@ -42,3 +42,4 @@ export default function App() {
     </>
   );
 }
+

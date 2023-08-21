@@ -1,7 +1,8 @@
 import React from "react";
-import "../App.css"
 import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
+import axios from "axios";
+import "../css/App.css"
 
 
 //Link per prendere l'id dei prodotti
@@ -18,9 +19,9 @@ export default function Home() {
     useEffect(() => {
         //effettuo la chiamata al server esterno per la navbar
         async function getId() {
-            const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-            const json = await res.json()
-            const cutJson = json.slice(0, 3)
+            const res = await axios.get("https://jsonplaceholder.typicode.com/posts")
+            const data = await res.data
+            const cutJson = data.slice(0, 3)
             setIdPost(cutJson)
         }
         getId()

@@ -15,13 +15,15 @@
 //pushare l'array all'interno della matrice
 //stampare matrice
 
-function firstMatrix(arr, n){
+function firstMatrix(arr, n) {
     let matrix = [];
-    for(let i = 0; i < n; i++){
+    for (let i = 0; i < n; i++) {
         matrix.push(arr)
     }
     return matrix
 }
 
-let a = [1,2,3,4,5,6]
+let a = [1, 2, 3, 4, 5, 6]
 console.log(firstMatrix(a, 8));
+
+//FATTO

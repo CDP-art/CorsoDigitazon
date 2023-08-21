@@ -20,4 +20,6 @@ function addUpFromNumber(n) {
     return sum;
 }
 
-addUpFromNumber(8)
+addUpFromNumber(4)
+
+//FATTO

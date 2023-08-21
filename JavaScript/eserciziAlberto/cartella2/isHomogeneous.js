@@ -35,3 +35,5 @@ function isHomogeneous(arr) {
 
 
 console.log(isHomogeneous(arr));
+
+//FATTO

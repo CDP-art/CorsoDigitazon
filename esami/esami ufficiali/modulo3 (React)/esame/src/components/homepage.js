@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { useState, useEffect } from "react";
 
 function Card() {
@@ -8,9 +9,8 @@ function Card() {
     useEffect(() => {
         //effettuo la chiamata al server esterno per prendere le categorie
         async function getProducts() {
-            const res = await fetch("https://dummyjson.com/products/10")
-            const json = await res.json()
-            let urls = json.images
+            const res = await axios.get("https://dummyjson.com/products/10")
+            let urls = res.data.images
             setProducts(urls);
         }
         getProducts()
@@ -35,9 +35,8 @@ function Cart() {
 
     useEffect(() => {
         async function getCarts() {
-            const res = await fetch("https://dummyjson.com/carts/16")
-            const json = await res.json()
-            setCarts(json.products);
+            const res = await axios.get("https://dummyjson.com/carts/16")
+            setCarts(res.data.products);
         }
         getCarts()
     }, [])
@@ -45,9 +44,8 @@ function Cart() {
 
     useEffect(() => {
         async function getTotal() {
-            const res = await fetch("https://dummyjson.com/carts/")
-            const json = await res.json()
-            setTotals(json.carts[15]);
+            const res = await axios.get("https://dummyjson.com/carts/")
+            setTotals(res.data.carts[15]);
         }
         getTotal()
     }, [])
