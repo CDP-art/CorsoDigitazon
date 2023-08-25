@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
 
 export default function Card() {
 
@@ -18,12 +19,19 @@ export default function Card() {
     }, [])
 
     return (
-        <div className="products">
+        <div className="products"
+            style={{
+                width: "75%",
+                display: "flex",
+                flexWrap: "wrap"
+            }}
+        >
             {products.map((img, i) => (
                 <div className="img" key={i}>
                     <img src={img} key={i} alt="" style={{ objectFit: "contain", margin: "10px" }} width={200} height={200}></img>
                 </div>
             ))}
+            <Outlet></Outlet>
         </div>
     );
 }

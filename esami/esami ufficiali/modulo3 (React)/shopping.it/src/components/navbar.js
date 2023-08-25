@@ -2,11 +2,12 @@ import React from "react";
 import axios from "axios";
 import { Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "../css/App.css";
+import "../css/navbar.css";
 
 export default function Navbar() {
 
     const [categories, setCategories] = useState([])
+    const [user, setUser] = useState({})
 
     useEffect(() => {
         //effettuo la chiamata al server esterno per prendere le categorie
@@ -15,6 +16,15 @@ export default function Navbar() {
             setCategories(res.data)
         }
         getCategories()
+    }, [])
+
+    useEffect(() => {
+        //effettuo la chiamata al server esterno per prendere l'utente 21
+        async function getUser() {
+            const res = await axios.get("https://dummyjson.com/users/21")
+            setUser(res.data)
+        }
+        getUser()
     }, [])
 
     return (
@@ -37,7 +47,7 @@ export default function Navbar() {
                         <input type="text" placeholder="Cerca su shopping.it"></input>
                     </div>
                     <div className="account">
-                        <span>CDP94</span>
+                        <span>{user.firstName} {user.age}</span>
                     </div>
                 </nav>
                 <div className="categories">

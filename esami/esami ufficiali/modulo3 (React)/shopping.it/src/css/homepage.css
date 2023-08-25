@@ -1,11 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.body {
-    width: 80%;
+.generalContainer {
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }

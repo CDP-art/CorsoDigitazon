@@ -39,6 +39,7 @@ export default function Body({ post }) {
                     ))}
                 </ul>
             </div>
+            <p>BELLA ZIO!</p>
             <Outlet />
         </div>
     );

@@ -1,0 +1,61 @@
+.containerNavbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav {
+    margin-top: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav input[type="text"] {
+    height: 20px;
+    width: 400px;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(180, 180, 180);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.account {
+    background-color: #424242;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.account span {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: medium;
+}
+
+.categories {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    justify-content: center;
+
+}
+
+.categories p {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.categories p:hover {
+    color: black;
+    background-color: orange;
+}
