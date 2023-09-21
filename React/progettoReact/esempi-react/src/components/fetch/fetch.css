@@ -1,10 +1,10 @@
 #fetchContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
     flex-direction: column;
-    width: 100vw;
+    height: 600px;
+    overflow: scroll;
 }
 
 #imagesList {

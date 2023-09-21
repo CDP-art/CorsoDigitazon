@@ -10,7 +10,7 @@ export default function RGB() {
     return (
         <>
             <h2>Caccia al colore</h2>
-            <div className="container" style={{ width: "50%", marginTop: "40px" }}>
+            <div className="containerRGB">
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                     <div>
                         <div>

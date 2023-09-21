@@ -1,0 +1,48 @@
+.generalContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sideBar li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.sideBar li:hover {
+    cursor: pointer;
+}
+
+.sideBar ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sideBar nav {
+    border: 1px solid;
+    height: 600px;
+    width: 200px;
+
+}
+
+.body {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    height: 600px;
+}

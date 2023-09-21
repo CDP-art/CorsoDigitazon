@@ -6,12 +6,12 @@ export default function CreazyButton() {
 
 
     return (
-        <main style={{ width: "1200px", height: "600px", backgroundColor: "pink", position: "relative" }}>
+        <main style={{ width: "100%", height: "100%", backgroundColor: "lightblue", position: "relative" }}>
 
             <div
                 onMouseEnter={(e) => {
                     let newHeight = Math.random() * 550;
-                    let newWidth = Math.random() * 1150;
+                    let newWidth = Math.random() * 733;
                     setPosition({ x: newHeight, y: newWidth })
                 }}
                 style={{ padding: "10px", backgroundColor: "purple", position: "absolute", left: position.y, top: position.x }}>

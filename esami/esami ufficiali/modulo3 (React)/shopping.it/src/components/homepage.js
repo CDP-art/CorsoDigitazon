@@ -3,7 +3,7 @@ import "../css/homepage.css"
 import axios from "axios";
 import { useState, useEffect } from "react";
 // import Card from "./card";
-//import Cart from "./cart";
+import Cart from "./cart";
 
 export default function Homepage() {
 
@@ -19,10 +19,11 @@ export default function Homepage() {
     }, [])
 
     return (
-        <div className="generalContainer">
-            <h1>Bentornato {user.firstName} {user.age}!</h1>
-            <div className="container">
-            </div>
+        <div className="homeContainer">
+            <main>
+                <h1>Bentornato {user.firstName} {user.age}!</h1>
+            </main>
+            <Cart />
         </div>
     );
 }

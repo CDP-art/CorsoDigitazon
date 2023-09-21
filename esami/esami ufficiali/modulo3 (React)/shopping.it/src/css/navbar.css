@@ -7,7 +7,6 @@
 }
 
 nav {
-    margin-top: 10px;
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -40,6 +39,7 @@ nav input[type="text"] {
 }
 
 .categories {
+    width: 95%;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;

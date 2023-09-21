@@ -18,8 +18,8 @@ export default function Body({ category }) {
     }, [category])
 
     return (
-        <div className="container">
-            <div className="containerCard">
+        <div className="bodyContainer">
+            <div className="cardContainer">
                 {singleCategory.map((product, id) => (
                     <div className="card" key={id}>
                         <h3>{product.title.toUpperCase()}</h3>
@@ -27,6 +27,7 @@ export default function Body({ category }) {
                         <h4>{product.brand}</h4>
                         <h5>{product.description}</h5>
                         <h2>€ {product.price}</h2>
+                        <button type="button">Aggiungi</button>
                     </div>
                 ))}
             </div>

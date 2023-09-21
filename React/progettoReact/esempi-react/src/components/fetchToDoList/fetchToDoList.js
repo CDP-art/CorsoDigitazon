@@ -38,7 +38,7 @@ export default function TodoList() {
     console.log(reorderedTodos)
 
     return (
-        <div className="container">
+        <div className="containerTodoList">
             <h2>Todo List</h2>
             <ul className="todo">
                 {reorderedTodos.map((todo) => (
